@@ -1,0 +1,107 @@
+# The weekly run: fetch, filter, classify, publish the page and post to Slack.
+# Mondays at 9:00 am Eastern, plus a manual "Run workflow" button.
+
+name: Weekly job roundup
+
+on:
+  schedule:
+    # GitHub schedules run in UTC. 9:00 am Eastern is 14:00 UTC in winter (EST)
+    # and 13:00 UTC in summer (EDT), so both are scheduled and the first step
+    # skips whichever one isn't 9 am in Toronto.
+    - cron: "0 13 * * 1"
+    - cron: "0 14 * * 1"
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Test run: post to the private staff channel only"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write   # commit site/jobs.json and logs
+  pages: write      # deploy the page
+  id-token: write   # required by the Pages deploy
+
+concurrency:
+  group: weekly-roundup
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      PAGE_URL: ${{ vars.PAGE_URL }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      SLACK_ALERT_WEBHOOK_URL: ${{ secrets.SLACK_ALERT_WEBHOOK_URL }}
+    steps:
+      - name: Check it's 9 am in Toronto
+        id: clock
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(TZ=America/Toronto date +%H)" != "09" ]; then
+            echo "Not 9 am Eastern right now (the other schedule covers it); skipping."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.clock.outputs.go == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.clock.outputs.go == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        if: steps.clock.outputs.go == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Fetch, filter and classify
+        id: weekly
+        if: steps.clock.outputs.go == 'true'
+        run: python scripts/run_weekly.py
+
+      - name: Commit this week's data
+        if: steps.clock.outputs.go == 'true' && steps.weekly.outcome == 'success'
+        run: |
+          git config user.name "TAP Job Roundup bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/jobs.json logs/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Weekly roundup $(TZ=America/Toronto date +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+        if: steps.clock.outputs.go == 'true' && steps.weekly.outcome == 'success'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.clock.outputs.go == 'true' && steps.weekly.outcome == 'success'
+        with:
+          path: site
+
+      - name: Deploy the page
+        id: deploy
+        if: steps.clock.outputs.go == 'true' && steps.weekly.outcome == 'success'
+        uses: actions/deploy-pages@v4
+
+      - name: Post to Slack
+        if: steps.clock.outputs.go == 'true' && steps.weekly.outcome == 'success' && steps.deploy.outcome == 'success'
+        run: |
+          if [ "${{ inputs.test }}" = "true" ]; then
+            python scripts/notify_slack.py --test
+          else
+            python scripts/notify_slack.py
+          fi
+
+      - name: Alert staff if anything failed
+        if: failure() && steps.clock.outputs.go == 'true'
+        run: python scripts/notify_slack.py --failed

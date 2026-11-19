@@ -1,0 +1,83 @@
+# TAP Job Roundup: posting filters
+# Edit these lists to tune what counts as a People and Culture role in Canada.
+#
+# How terms match: case-insensitive, whole words only. "HR" matches "HR Manager"
+# but not "Three". End a term with * to also match longer words that start with
+# it: "Recruit*" matches Recruiter, Recruiting and Recruitment.
+
+people_culture:
+  # A title must contain at least one of these...
+  include:
+    - People
+    - HR
+    - HRBP
+    - Human Resources
+    - Talent
+    - Recruit*
+    - Sourcer
+    - Culture
+    - Total Rewards
+    - Compensation
+    - Benefits
+    - Payroll
+    - HRIS
+    - People Operations
+    - Learning & Development
+    - Learning and Development
+    - L&D
+    - DEI
+    - Diversity
+    - Employee Experience
+    - Employee Relations
+    - Workplace
+    - CHRO
+    - Chief People Officer
+
+  # ...and none of these...
+  exclude:
+    - Engineer*
+    - Developer
+    - Sales
+    - Account Executive
+    - Product Manager
+    - Data Scientist
+    - Customer
+    - Marketing
+
+  # ...unless it also contains one of these. These terms clearly describe a
+  # People and Culture job, so "Sales Recruiter" and "Technical Recruiter,
+  # Engineering" are kept.
+  always_keep:
+    - Recruit*
+    - Sourcer
+    - Talent Acquisition
+    - Talent Partner
+    - People Partner
+    - HR Business Partner
+    - HRBP
+    - People Operations
+    - Compensation
+    - Total Rewards
+    - Payroll
+    - HRIS
+
+  # Phrases that contain a People term but are not People and Culture jobs.
+  # They are removed from the title before the checks above.
+  false_positives:
+    - People Manager
+    - Manage People
+    - Workplace Technology
+    - Workplace Engineer*
+    - Customer Success
+    - Talent Network
+    - Talent Community
+    - Talent Pool
+    - Benefits Advisor        # insurance sales roles at benefits companies; remove if you want them
+    - Culture Media           # biotech "cell culture" style titles
+    - Cell Culture
+
+location:
+  # A plain "Remote" with no country is dropped, because it is usually remote
+  # within the US. Set this to true to keep plain "Remote" roles from
+  # companies headquartered in Canada.
+  keep_plain_remote: false

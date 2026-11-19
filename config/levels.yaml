@@ -1,0 +1,78 @@
+# TAP Job Roundup: level categories
+# Mirrors the "Level rules" tab in the Company List Sheet.
+#
+# Each posting gets the FIRST category with a matching rule, checked top to
+# bottom. Within a category, rules are checked in order too. Every posting and
+# the rule it matched is written to logs/classification.csv, so wrong calls
+# are easy to trace back to a line here.
+#
+# Terms match like config/filters.yaml: case-insensitive whole words, and a
+# trailing * also matches longer words ("Recruit*" matches Recruiter).
+#
+# What a rule can check (every condition listed must be true):
+#   title_any:             the title contains any of these
+#   title_none:            the title contains none of these
+#   employment_type_any:   the ATS employment type field contains any of these
+#   description_any:       the first part of the description contains any of these
+#   experience_max_years:  the description's experience requirement is this many years or fewer
+#                          ("1-3 years", "up to 5 years", "3+ years"; the highest one mentioned counts)
+#   fallback: true         always matches (use on the very last rule only)
+
+description_scan_chars: 1500   # how much of the description to read for description_any
+
+categories:
+  - name: Senior & executive
+    rules:
+      - id: exec-title
+        title_any: [VP, Vice President, CHRO, Chief People Officer, Chief Human Resources Officer,
+                    Chief Talent Officer, Head of People, Head of Talent, Head of HR,
+                    Head of Human Resources, Head of People and Culture, Head of People & Culture]
+
+  - name: Leadership
+    rules:
+      - id: director-title
+        title_any: [Director, Directeur, Directrice]
+
+  - name: Fractional
+    rules:
+      - id: fractional-employment-type
+        employment_type_any: [Contract, Contractor, Temporary, Temp, Part-time, Part time, Fixed term, Fixed-term, Term]
+        title_none: [Intern*, Co-op, Coop]
+      - id: fractional-title
+        title_any: [Contract, Contractor, Fractional, Interim, Part-time, Part time, Temporary, Temp,
+                    Maternity Leave, Mat Leave, Parental Leave, Fixed-term, Fixed term, month term,
+                    6-month, 9-month, 12-month, 18-month, 6 month, 9 month, 12 month, 18 month]
+        title_none: [Intern*, Co-op, Coop]
+      - id: fractional-description
+        description_any: [contract role, contract position, contract opportunity, month contract,
+                          "-month contract", fixed-term, fixed term, interim, fractional,
+                          part-time role, part-time position, temporary role, temporary position,
+                          maternity leave, parental leave, leave coverage]
+        title_none: [Intern*, Co-op, Coop]
+
+  - name: Specialist
+    rules:
+      # The Sheet lists "Recruiting Coordinator" as Specialist, so junior
+      # single-function titles land here. Interns and co-ops go to Early career.
+      - id: specialist-function
+        title_any: [Talent Acquisition, Recruit*, Sourcer, Sourcing, Compensation, Total Rewards,
+                    Benefits, Payroll, HRIS, People Systems, People Analytics, Learning & Development,
+                    Learning and Development, L&D, Learning, DEI, Diversity, Inclusion]
+        title_none: [Intern*, Co-op, Coop]
+
+  - name: Early career
+    rules:
+      - id: early-title
+        title_any: [Coordinator, Assistant, Associate, Junior, Jr, Intern*, Co-op, Coop, Entry Level, Administrator]
+      - id: early-experience
+        experience_max_years: 5
+        # Senior titles often say "5+ years" but are not early career
+        title_none: [Senior, Sr, Lead, Principal, Manager, Head, Partner]
+
+  - name: Mid career
+    rules:
+      - id: mid-title
+        title_any: [Manager, Senior Manager, Business Partner, HRBP, Generalist, Partner, Specialist,
+                    Lead, Advisor, Consultant, Analyst]
+      - id: mid-fallback
+        fallback: true

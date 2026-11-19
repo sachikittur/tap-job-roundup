@@ -1,0 +1,295 @@
+{
+ "generated_at": "2026-11-19T12:54:06-05:00",
+ "run_date": "2026-11-19",
+ "count": 13,
+ "new_count": 13,
+ "categories": {
+  "Early career": 6,
+  "Specialist": 5,
+  "Mid career": 1,
+  "Senior & executive": 1
+ },
+ "jobs": [
+  {
+   "id": "c7c04235baba",
+   "title": "People Operations and Payroll Co-Op",
+   "company": "Kabam Games Inc.",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Co-op / Intern",
+   "category": "Early career",
+   "category_rule": "early-title (title 'Co-op')",
+   "url": "https://jobs.lever.co/kabam/83e8f972-f58a-4b88-bc9e-7a818b4f9a5b",
+   "date_posted": "2026-11-17",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Lever"
+  },
+  {
+   "id": "05357f03c990",
+   "title": "Co-op/Intern, People Team & Operations - Winter 2027",
+   "company": "Hootsuite Inc",
+   "location": "Vancouver, BC · Toronto, ON · Calgary, AB · Ottawa, ON · Edmonton, AB",
+   "locations": [
+    "Vancouver, BC",
+    "Toronto, ON",
+    "Calgary, AB",
+    "Ottawa, ON",
+    "Edmonton, AB"
+   ],
+   "provinces": [
+    "BC",
+    "ON",
+    "AB"
+   ],
+   "remote": false,
+   "employment_type": "",
+   "category": "Early career",
+   "category_rule": "early-title (title 'Intern*')",
+   "url": "https://job-boards.greenhouse.io/hootsuite/jobs/8392381",
+   "date_posted": "2026-11-16",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Greenhouse"
+  },
+  {
+   "id": "b4292ed1e25c",
+   "title": "HR & Admin Generalist - POPJOY Retail",
+   "company": "IGG Canada",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Full-Time",
+   "category": "Early career",
+   "category_rule": "early-experience (asks for 2 years)",
+   "url": "https://igg.bamboohr.com/careers/293",
+   "date_posted": "2026-11-14",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "BambooHR"
+  },
+  {
+   "id": "e2eb9c87fcb7",
+   "title": "Senior Manager, Talent Acquisition",
+   "company": "Trulioo",
+   "location": "Vancouver, BC · Toronto, ON",
+   "locations": [
+    "Vancouver, BC",
+    "Toronto, ON"
+   ],
+   "provinces": [
+    "BC",
+    "ON"
+   ],
+   "remote": false,
+   "employment_type": "Full-time",
+   "category": "Specialist",
+   "category_rule": "specialist-function (title 'Talent Acquisition')",
+   "url": "https://jobs.ashbyhq.com/trulioo/4f87a9f2-2c5d-4f44-960f-0d7c3101e625",
+   "date_posted": "2026-11-13",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Ashby"
+  },
+  {
+   "id": "5e8f8a956921",
+   "title": "People & Office Coordinator (Hybrid)",
+   "company": "Traction Rec",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Full-Time",
+   "category": "Early career",
+   "category_rule": "early-title (title 'Coordinator')",
+   "url": "https://tractionrec.bamboohr.com/careers/157",
+   "date_posted": "2026-10-29",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "BambooHR"
+  },
+  {
+   "id": "e986a091cbb7",
+   "title": "Talent Acquisition Coordinator",
+   "company": "Trulioo",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Full-time",
+   "category": "Specialist",
+   "category_rule": "specialist-function (title 'Talent Acquisition')",
+   "url": "https://jobs.ashbyhq.com/trulioo/0a6cd44d-b8b2-46fa-9763-b07b8c4dc65c",
+   "date_posted": "2026-10-26",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Ashby"
+  },
+  {
+   "id": "324acbf967ab",
+   "title": "Talent Acquisition Specialist",
+   "company": "Broadsign Canada Company",
+   "location": "Montreal, QC",
+   "locations": [
+    "Montreal, QC"
+   ],
+   "provinces": [
+    "QC"
+   ],
+   "remote": false,
+   "employment_type": "",
+   "category": "Specialist",
+   "category_rule": "specialist-function (title 'Talent Acquisition')",
+   "url": "https://job-boards.greenhouse.io/broadsign/jobs/8041446003",
+   "date_posted": "2026-10-22",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Greenhouse"
+  },
+  {
+   "id": "36e24119c71f",
+   "title": "Talent Acquisition Specialist",
+   "company": "Financeit",
+   "location": "Toronto, ON",
+   "locations": [
+    "Toronto, ON"
+   ],
+   "provinces": [
+    "ON"
+   ],
+   "remote": false,
+   "employment_type": "Full-time",
+   "category": "Specialist",
+   "category_rule": "specialist-function (title 'Talent Acquisition')",
+   "url": "https://apply.workable.com/j/660916DD3C",
+   "date_posted": "2026-10-22",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Workable"
+  },
+  {
+   "id": "f846bb9685c4",
+   "title": "Associate People Business Partner",
+   "company": "AlayaCare",
+   "location": "Toronto, ON",
+   "locations": [
+    "Toronto, ON"
+   ],
+   "provinces": [
+    "ON"
+   ],
+   "remote": false,
+   "employment_type": "",
+   "category": "Early career",
+   "category_rule": "early-title (title 'Associate')",
+   "url": "https://alayacare.com/open-positions?gh_jid=8903199002",
+   "date_posted": "2026-10-20",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Greenhouse"
+  },
+  {
+   "id": "4deaebfe72ef",
+   "title": "Senior People Business Partner",
+   "company": "AlayaCare",
+   "location": "Toronto, ON",
+   "locations": [
+    "Toronto, ON"
+   ],
+   "provinces": [
+    "ON"
+   ],
+   "remote": false,
+   "employment_type": "",
+   "category": "Mid career",
+   "category_rule": "mid-title (title 'Business Partner')",
+   "url": "https://alayacare.com/open-positions?gh_jid=8889462002",
+   "date_posted": "2026-10-14",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Greenhouse"
+  },
+  {
+   "id": "13a6f7aed645",
+   "title": "Workplace Experience Coordinator",
+   "company": "Trulioo",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Full-time",
+   "category": "Early career",
+   "category_rule": "early-title (title 'Coordinator')",
+   "url": "https://jobs.ashbyhq.com/trulioo/af284b6a-10bf-43e8-9e03-62084d19e5db",
+   "date_posted": "2026-10-05",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Ashby"
+  },
+  {
+   "id": "4153fe7eada2",
+   "title": "Head of People",
+   "company": "MineSense Technologies",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Full-Time Employee",
+   "category": "Senior & executive",
+   "category_rule": "exec-title (title 'Head of People')",
+   "url": "https://jobs.lever.co/minesense/90bb8c5b-32aa-4692-8e38-c57d1e0353dd",
+   "date_posted": "2026-09-22",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Lever"
+  },
+  {
+   "id": "e98d027306f1",
+   "title": "Manager, Payroll",
+   "company": "Kabam Games Inc.",
+   "location": "Vancouver, BC",
+   "locations": [
+    "Vancouver, BC"
+   ],
+   "provinces": [
+    "BC"
+   ],
+   "remote": false,
+   "employment_type": "Regular Full-time (RFT)",
+   "category": "Specialist",
+   "category_rule": "specialist-function (title 'Payroll')",
+   "url": "https://jobs.lever.co/kabam/8f9bdbed-c142-4b52-a71a-d2d9d29d8f11",
+   "date_posted": "2026-07-22",
+   "first_found": "2026-11-19",
+   "is_new": true,
+   "ats": "Lever"
+  }
+ ]
+}

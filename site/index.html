@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>TAP Job Roundup</title>
+<meta name="description" content="People and Culture roles at Canadian tech companies, updated every Monday by TAP Network.">
+<link rel="preload" href="assets/fonts/dm-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/dm-serif-display-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Fonts and tokens from the TAP Network design system (project/tokens.json). Self-hosted so the site stays self-contained. */
+@font-face { font-family: "DM Serif Display"; font-weight: 400; font-style: normal; font-display: swap; src: url("assets/fonts/dm-serif-display-400.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: swap; src: url("assets/fonts/dm-sans-400.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: swap; src: url("assets/fonts/dm-sans-700.woff2") format("woff2"); }
+
+:root {
+  color-scheme: light;
+  --color-brand-primary: #02195b;
+  --color-brand-accent: #2fd6eb;
+  --color-brand-peach: #f8d8c3;
+  --color-brand-tint: #d2f6fa;
+  --color-action: #02195b;
+  --color-action-hover: #010f38;
+  --color-on-action: #ffffff;
+  --color-link: #008196;
+  --color-link-hover: #006a7b;
+  --color-link-on-tint: #006a7b;
+  --color-text: #0b1b2a;
+  --color-text-muted: #4a5568;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f6f8fa;
+  --color-surface-brand: #02195b;
+  --color-border: #d9dde3;
+  --color-control-border: #4a5568;
+  --color-on-brand: #ffffff;
+  --color-on-brand-muted: rgba(255,255,255,0.82);
+  --color-focus: #008196;
+  --color-focus-on-brand: #2fd6eb;
+  --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-base: 1.125rem; --text-md: 1.25rem; --text-lg: 1.5rem; --text-xl: 2.25rem; --text-2xl: 3rem;
+  --leading-tight: 1.15; --leading-snug: 1.3; --leading-body: 1.6;
+  --space-4: 4px; --space-8: 8px; --space-16: 16px; --space-24: 24px; --space-32: 32px; --space-48: 48px; --space-56: 56px; --space-80: 80px;
+  --radius-sm: 8px; --radius-md: 16px; --radius-pill: 999px;
+  --layout-max-width: 1200px; --layout-gutter: 24px;
+}
+
+/* Base, from components/bundle.css */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-surface); font-family: var(--font-body); color: var(--color-text); font-size: var(--text-base); line-height: var(--leading-body); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p { margin: 0; }
+a { color: var(--color-link); }
+a:hover { color: var(--color-link-hover); }
+:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; }
+.tap-on-brand { background: var(--color-surface-brand); color: var(--color-on-brand); }
+.tap-on-brand :focus-visible { outline-color: var(--color-focus-on-brand); }
+.tap-wrap { max-width: var(--layout-max-width); margin-inline: auto; padding-inline: var(--layout-gutter); }
+.tap-display { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.02em; line-height: var(--leading-tight); color: var(--color-brand-primary); }
+.tap-on-brand .tap-display { color: var(--color-on-brand); }
+.tap-label { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; line-height: var(--leading-snug); color: var(--color-brand-primary); }
+.tap-on-brand .tap-label--accent { color: var(--color-brand-accent); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.tap-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--space-24); border: 2px solid transparent; border-radius: var(--radius-pill); font-family: var(--font-body); font-size: var(--text-base); font-weight: 700; line-height: 1.2; text-decoration: none; cursor: pointer; transition: background 200ms ease, color 200ms ease, border-color 200ms ease; }
+.tap-btn--primary, a.tap-btn--primary { background: var(--color-action); color: var(--color-on-action); }
+.tap-btn--primary:hover, a.tap-btn--primary:hover { background: var(--color-action-hover); color: var(--color-on-action); }
+.tap-btn--secondary, a.tap-btn--secondary { background: transparent; color: var(--color-link); border-color: currentColor; }
+.tap-btn--secondary:hover { background: var(--color-link); color: var(--color-on-action); border-color: var(--color-link); }
+.tap-badge { display: inline-flex; align-items: center; min-height: 26px; padding: 0 12px; border-radius: var(--radius-pill); font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.02em; background: var(--color-brand-primary); color: var(--color-on-brand); white-space: nowrap; }
+.tap-field label { display: block; margin-bottom: var(--space-4); font-size: var(--text-sm); font-weight: 700; color: var(--color-brand-primary); }
+.tap-input { display: block; width: 100%; min-height: 48px; padding: 0 var(--space-16); border: 1px solid var(--color-control-border); border-radius: var(--radius-sm); background: var(--color-surface); font-family: var(--font-body); font-size: var(--text-base); color: var(--color-text); }
+select.tap-input { appearance: none; -webkit-appearance: none; padding-right: 44px; cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2302195b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 16px center; }
+.tap-footer { border-top: 1px solid var(--color-border); padding-block: var(--space-48); font-size: var(--text-sm); color: var(--color-text-muted); }
+
+/* Header band */
+.masthead { padding-block: var(--space-16); border-bottom: 1px solid rgba(255,255,255,0.14); }
+.masthead__logo { display: block; height: 56px; width: auto; } /* the PNG's 270px of side space is the logo's clear space; leave it */
+.hero { padding-block: var(--space-48) var(--space-56); }
+.hero__title { font-size: var(--text-2xl); max-width: 20ch; margin-top: var(--space-16); }
+.hero__lead { margin-top: var(--space-16); font-size: var(--text-md); color: var(--color-on-brand-muted); max-width: 52ch; }
+.hero__updated { margin-top: var(--space-24); font-size: var(--text-sm); font-weight: 700; color: var(--color-brand-accent); }
+
+/* Disclaimer */
+.notice { margin-top: var(--space-32); padding: var(--space-16) var(--space-24); background: var(--color-brand-tint); border-radius: var(--radius-md); color: var(--color-text); font-size: var(--text-sm); max-width: 78ch; }
+
+/* Controls */
+.controls { margin-top: var(--space-32); display: grid; gap: var(--space-24); }
+.pills { display: flex; flex-wrap: wrap; gap: var(--space-8); margin: 0; padding: 0; border: 0; }
+.pills legend { margin-bottom: var(--space-8); padding: 0; font-size: var(--text-sm); font-weight: 700; color: var(--color-brand-primary); }
+.pill { display: inline-flex; align-items: center; gap: var(--space-8); min-height: 44px; padding: 0 var(--space-16); border: 2px solid var(--color-brand-primary); border-radius: var(--radius-pill); background: var(--color-surface); color: var(--color-brand-primary); font-family: var(--font-body); font-size: var(--text-sm); font-weight: 700; cursor: pointer; transition: background 160ms ease, color 160ms ease; }
+.pill:hover { background: var(--color-surface-alt); }
+.pill[aria-pressed="true"] { background: var(--color-brand-primary); color: var(--color-on-brand); }
+.pill__count { font-weight: 400; font-variant-numeric: tabular-nums; }
+.pill[disabled] { opacity: 1; color: var(--color-text-muted); border-color: var(--color-border); cursor: default; background: var(--color-surface); }
+.filters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: var(--space-16); }
+
+/* Results */
+.results-bar { margin-top: var(--space-32); display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-8) var(--space-24); }
+.results-count { font-size: var(--text-sm); color: var(--color-text-muted); }
+.linkbtn { background: none; border: 0; padding: 0; font: inherit; font-size: var(--text-sm); font-weight: 700; color: var(--color-link); text-decoration: underline; cursor: pointer; }
+.linkbtn:hover { color: var(--color-link-hover); }
+.jobs { list-style: none; margin: var(--space-16) 0 0; padding: 0; display: grid; gap: var(--space-16); }
+.job { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-16) var(--space-24); align-items: center; padding: var(--space-24); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+.job__top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-8) var(--space-16); }
+.job__title { font-size: var(--text-md); line-height: var(--leading-snug); font-weight: 700; color: var(--color-brand-primary); }
+.job__company { margin-top: var(--space-4); font-size: var(--text-base); color: var(--color-text); }
+.job__meta { margin: var(--space-8) 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-24); font-size: var(--text-sm); color: var(--color-text-muted); list-style: none; }
+.job__meta li { display: inline-flex; align-items: center; gap: 6px; }
+.job__meta svg { flex: none; color: var(--color-link); }
+.job__meta strong { color: var(--color-brand-primary); }
+.job .tap-btn { white-space: nowrap; }
+.empty { margin-top: var(--space-16); padding: var(--space-32) var(--space-24); border-radius: var(--radius-md); background: var(--color-surface-alt); }
+.empty h2 { font-family: var(--font-display); font-weight: 400; font-size: var(--text-lg); color: var(--color-brand-primary); }
+.empty p { margin-top: var(--space-8); color: var(--color-text-muted); }
+.empty .linkbtn { color: var(--color-link-on-tint); }
+main { padding-bottom: var(--space-80); }
+.tap-footer p + p { margin-top: var(--space-8); }
+
+@media (max-width: 720px) {
+  .hero { padding-block: var(--space-32) var(--space-48); }
+  .hero__title { font-size: 2.25rem; }
+  .hero__lead { font-size: var(--text-base); }
+  .masthead__logo { height: 48px; }
+  .filters { grid-template-columns: 1fr; }
+  .job { grid-template-columns: 1fr; padding: var(--space-16) var(--space-16) var(--space-24); }
+  .job .tap-btn { width: 100%; }
+  main { padding-bottom: var(--space-56); }
+}
+@media (prefers-reduced-motion: reduce) { * { transition-duration: 0.01ms !important; } }
+</style>
+</head>
+<body>
+<header class="tap-on-brand">
+  <div class="masthead">
+    <div class="tap-wrap"><img class="masthead__logo" src="assets/tap-logo-dark.png" width="1836" height="600" alt="TAP Network"></div>
+  </div>
+  <div class="hero tap-wrap">
+    <p class="tap-label tap-label--accent">TAP Job Roundup</p>
+    <h1 class="tap-display hero__title" id="headline">People and Culture roles at Canadian tech companies</h1>
+    <p class="hero__lead">Every Monday, Tech and People Network gathers the open People and Culture roles posted by TAP member companies, so you can see who is hiring in one place.</p>
+    <p class="hero__updated" id="updated" hidden></p>
+  </div>
+</header>
+
+<main class="tap-wrap">
+  <p class="notice" role="note">Roles are pulled each week from company careers pages and link to the original posting. TAP doesn't verify them, so please confirm a role is still open before you apply.</p>
+
+  <div class="controls">
+    <fieldset class="pills" id="categories">
+      <legend>Level</legend>
+    </fieldset>
+    <div class="filters">
+      <div class="tap-field">
+        <label for="search">Search by title, company or location</label>
+        <input class="tap-input" id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Try Total Rewards or Calgary">
+      </div>
+      <div class="tap-field">
+        <label for="province">Province</label>
+        <select class="tap-input" id="province"><option value="">All of Canada</option></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="results-bar">
+    <p class="results-count" id="count" role="status" aria-live="polite">Loading roles</p>
+    <button class="linkbtn" id="clear" type="button" hidden>Clear filters</button>
+  </div>
+  <ul class="jobs" id="jobs" aria-label="Roles"></ul>
+  <div class="empty" id="empty" hidden>
+    <h2>No roles match these filters</h2>
+    <p>Try a different search, or <button class="linkbtn" type="button" data-clear>clear all filters</button>.</p>
+  </div>
+</main>
+
+<footer class="tap-footer">
+  <div class="tap-wrap">
+    <p>A free resource for People and Culture leaders from TAP Network.</p>
+    <p>Roles come from public company careers pages only. Each listing links to the company's own posting.</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  "use strict";
+  const CATEGORIES = ["Early career", "Mid career", "Leadership", "Senior & executive", "Specialist", "Fractional"];
+  const PROVINCES = { AB: "Alberta", BC: "British Columbia", MB: "Manitoba", NB: "New Brunswick", NL: "Newfoundland and Labrador",
+    NS: "Nova Scotia", NT: "Northwest Territories", NU: "Nunavut", ON: "Ontario", PE: "Prince Edward Island",
+    QC: "Quebec", SK: "Saskatchewan", YT: "Yukon", CA: "Canada, location not stated", REMOTE: "Remote (Canada)" };
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+  const $ = (id) => document.getElementById(id);
+  const els = { cats: $("categories"), search: $("search"), province: $("province"), jobs: $("jobs"),
+                count: $("count"), empty: $("empty"), clear: $("clear"), headline: $("headline"), updated: $("updated") };
+  const state = { category: "", q: "", province: "" };
+  let jobs = [];
+
+  const fold = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const parseDate = (iso) => { const [y, m, d] = (iso || "").split("-").map(Number); return y ? new Date(y, m - 1, d) : null; };
+  const longDate = (iso, withDay) => { const d = parseDate(iso); if (!d) return ""; return (withDay ? DAYS[d.getDay()] + ", " : "") + MONTHS[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear(); };
+  const shortDate = (iso) => { const d = parseDate(iso); return d ? MONTHS[d.getMonth()] + " " + d.getDate() : ""; };
+  const safeUrl = (u) => { try { const x = new URL(u); return x.protocol === "https:" ? x.href : ""; } catch { return ""; } };
+
+  function el(tag, attrs, ...kids) {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (k === "class") n.className = v; else if (k === "text") n.textContent = v; else n.setAttribute(k, v);
+    }
+    for (const k of kids) if (k) n.append(k);
+    return n;
+  }
+  function icon(paths) { // Lucide glyphs, inline so nothing loads from a CDN
+    const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    for (const [k, v] of Object.entries({ width: 16, height: 16, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor",
+      "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round", "aria-hidden": "true" })) s.setAttribute(k, v);
+    s.innerHTML = paths;
+    return s;
+  }
+  const ICON_PIN = '<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>';
+  const ICON_LAYERS = '<path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>';
+  const ICON_CAL = '<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/>';
+
+  function matchesText(j) {
+    if (!state.q) return true;
+    const hay = fold([j.title, j.company, j.location].join(" "));
+    return fold(state.q).split(/\s+/).filter(Boolean).every((w) => hay.includes(w));
+  }
+  const matchesProvince = (j) => !state.province || (j.provinces || []).includes(state.province);
+  const matchesCategory = (j) => !state.category || j.category === state.category;
+
+  function renderPills() {
+    const base = jobs.filter((j) => matchesText(j) && matchesProvince(j));
+    const counts = Object.fromEntries(CATEGORIES.map((c) => [c, 0]));
+    base.forEach((j) => { if (j.category in counts) counts[j.category]++; });
+    els.cats.querySelectorAll("button").forEach((b) => b.remove());
+    [["", "All", base.length], ...CATEGORIES.map((c) => [c, c, counts[c]])].forEach(([value, label, n]) => {
+      const pressed = state.category === value;
+      const b = el("button", { type: "button", class: "pill", "aria-pressed": String(pressed), "data-category": value,
+        "aria-label": `${label}, ${n} ${n === 1 ? "role" : "roles"}` },
+        el("span", { text: label }), el("span", { class: "pill__count", text: String(n), "aria-hidden": "true" }));
+      els.cats.append(b);
+    });
+  }
+
+  function card(j) {
+    const url = safeUrl(j.url);
+    const top = el("div", { class: "job__top" }, el("h2", { class: "job__title", text: j.title }));
+    if (j.is_new) top.append(el("span", { class: "tap-badge", text: "New this week" }));
+    const meta = el("ul", { class: "job__meta" },
+      el("li", {}, icon(ICON_PIN), el("span", { text: j.location })),
+      el("li", {}, icon(ICON_LAYERS), el("span", {}, el("strong", { text: j.category || "Unsorted" }))),
+      el("li", {}, icon(ICON_CAL), el("span", { text: "Found " + shortDate(j.first_found) })));
+    const body = el("div", {}, top, el("p", { class: "job__company", text: j.company }), meta);
+    const apply = url
+      ? el("a", { class: "tap-btn tap-btn--primary", href: url, target: "_blank", rel: "noopener noreferrer",
+                  "aria-label": `Apply for ${j.title} at ${j.company} (opens the company's posting in a new tab)` }, "Apply")
+      : null;
+    return el("li", { class: "job" }, body, apply);
+  }
+
+  function render() {
+    renderPills();
+    const shown = jobs.filter((j) => matchesText(j) && matchesProvince(j) && matchesCategory(j));
+    els.jobs.replaceChildren(...shown.map(card));
+    els.empty.hidden = shown.length > 0 || jobs.length === 0;
+    const filtered = !!(state.category || state.q || state.province);
+    els.clear.hidden = !filtered;
+    els.count.textContent = filtered
+      ? `Showing ${shown.length} of ${jobs.length} ${jobs.length === 1 ? "role" : "roles"}`
+      : `${jobs.length} ${jobs.length === 1 ? "role" : "roles"}, newest first`;
+    writeUrl();
+  }
+
+  // Filters live in the address, so a filtered view can be shared in Slack
+  function readUrl() {
+    const p = new URLSearchParams(location.search);
+    state.category = CATEGORIES.includes(p.get("level")) ? p.get("level") : "";
+    state.q = p.get("q") || "";
+    state.province = p.get("province") || "";
+  }
+  function writeUrl() {
+    const p = new URLSearchParams();
+    if (state.category) p.set("level", state.category);
+    if (state.q) p.set("q", state.q);
+    if (state.province) p.set("province", state.province);
+    const qs = p.toString();
+    history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+  }
+
+  function fillProvinces() {
+    const present = new Set(jobs.flatMap((j) => j.provinces || []));
+    present.add("REMOTE");
+    if (state.province) present.add(state.province);
+    const order = Object.keys(PROVINCES).filter((k) => present.has(k));
+    order.forEach((k) => {
+      const n = jobs.filter((j) => (j.provinces || []).includes(k)).length;
+      els.province.append(el("option", { value: k, text: `${PROVINCES[k]} · ${n}` }));
+    });
+    els.province.value = state.province;
+  }
+
+  function clearAll() {
+    state.category = ""; state.q = ""; state.province = "";
+    els.search.value = ""; els.province.value = "";
+    render();
+    els.search.focus();
+  }
+
+  els.cats.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-category]");
+    if (!b) return;
+    state.category = b.dataset.category;
+    render();
+    const again = els.cats.querySelector(`button[data-category="${CSS.escape(state.category)}"]`);
+    if (again) again.focus();
+  });
+  els.search.addEventListener("input", () => { state.q = els.search.value.trim(); render(); });
+  els.province.addEventListener("change", () => { state.province = els.province.value; render(); });
+  els.clear.addEventListener("click", clearAll);
+  els.empty.querySelector("[data-clear]").addEventListener("click", clearAll);
+
+  readUrl();
+  els.search.value = state.q;
+  fetch("jobs.json", { cache: "no-store" })
+    .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then((data) => {
+      jobs = (data.jobs || []).slice().sort((a, b) =>
+        (b.first_found || "").localeCompare(a.first_found || "") || (b.date_posted || "").localeCompare(a.date_posted || ""));
+      const n = jobs.length, fresh = jobs.filter((j) => j.is_new).length;
+      els.headline.textContent = `${n} People and Culture ${n === 1 ? "role" : "roles"} open at Canadian tech companies`;
+      document.title = `${n} People and Culture roles · TAP Job Roundup`;
+      if (data.run_date) {
+        els.updated.textContent = `Last updated ${longDate(data.run_date, true)}` + (fresh ? ` · ${fresh} new this week` : "");
+        els.updated.hidden = false;
+      }
+      fillProvinces();
+      render();
+    })
+    .catch(() => {
+      els.count.textContent = "This week's roles didn't load. Please refresh the page, or check back shortly.";
+    });
+})();
+</script>
+</body>
+</html>

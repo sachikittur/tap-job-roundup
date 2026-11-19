@@ -1,0 +1,577 @@
+{
+ "run_date": "2026-11-19",
+ "generated_at": "2026-11-19T12:54:06-05:00",
+ "companies_in_csv": 193,
+ "companies_fetched": 79,
+ "companies_skipped": {
+  "no supported ATS": 114
+ },
+ "companies_failed": 0,
+ "postings_seen": 713,
+ "people_culture_postings": 13,
+ "jobs_published": 13,
+ "new_jobs": 13,
+ "dropped_since_last_run": 0,
+ "categories": {
+  "Early career": 6,
+  "Specialist": 5,
+  "Mid career": 1,
+  "Senior & executive": 1
+ },
+ "failures": [],
+ "companies": [
+  {
+   "company": "7shifts",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 11,
+   "seconds": 0.8
+  },
+  {
+   "company": "Absorb Software",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 17,
+   "seconds": 2.4
+  },
+  {
+   "company": "Acuity Insights",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 13,
+   "seconds": 0.9
+  },
+  {
+   "company": "AlayaCare",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 26,
+   "seconds": 0.8
+  },
+  {
+   "company": "AltaML",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 4,
+   "seconds": 1.2
+  },
+  {
+   "company": "Amii",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 9,
+   "seconds": 1.0
+  },
+  {
+   "company": "Andgo Systems",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 4,
+   "seconds": 1.0
+  },
+  {
+   "company": "Aspect Biosystems",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 9,
+   "seconds": 2.6
+  },
+  {
+   "company": "Atimi Software",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 2,
+   "seconds": 1.1
+  },
+  {
+   "company": "Auvik Networks",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 6,
+   "seconds": 3.9
+  },
+  {
+   "company": "Bardel Entertainment Inc",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 8,
+   "seconds": 2.3
+  },
+  {
+   "company": "Beamdog",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 1,
+   "seconds": 0.7
+  },
+  {
+   "company": "BGC Engineering Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 32,
+   "seconds": 2.1
+  },
+  {
+   "company": "Binary Stream Software Inc",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 7,
+   "seconds": 3.4
+  },
+  {
+   "company": "Broadsign Canada Company",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 12,
+   "seconds": 3.3
+  },
+  {
+   "company": "Bucketlist Rewards",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 4.1
+  },
+  {
+   "company": "Carbon60",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 5,
+   "seconds": 5.6
+  },
+  {
+   "company": "Coconut Software",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 3,
+   "seconds": 3.3
+  },
+  {
+   "company": "Conexiom",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 5,
+   "seconds": 3.6
+  },
+  {
+   "company": "Conversion",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 5,
+   "seconds": 0.4
+  },
+  {
+   "company": "Corcym Canada Corp.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 7,
+   "seconds": 5.2
+  },
+  {
+   "company": "d1g1t Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 7,
+   "seconds": 6.4
+  },
+  {
+   "company": "Delta-Q Technologies Corp.",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 1,
+   "seconds": 0.1
+  },
+  {
+   "company": "E-One Moli Energy",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 15.1
+  },
+  {
+   "company": "Elastic Path Software",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 3,
+   "seconds": 8.4
+  },
+  {
+   "company": "Engineered Intelligence",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 8,
+   "seconds": 9.0
+  },
+  {
+   "company": "Fatigue Science",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 18.3
+  },
+  {
+   "company": "Felix Health",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 33,
+   "seconds": 0.5
+  },
+  {
+   "company": "Financeit",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 12,
+   "seconds": 0.5
+  },
+  {
+   "company": "Fispan",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 15,
+   "seconds": 8.9
+  },
+  {
+   "company": "FociSolutions",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 4,
+   "seconds": 1.6
+  },
+  {
+   "company": "FORM",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 2,
+   "seconds": 0.1
+  },
+  {
+   "company": "Gasket Games Corp",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 0,
+   "seconds": 9.8
+  },
+  {
+   "company": "Global Relay Communications Inc.",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 44,
+   "seconds": 0.1
+  },
+  {
+   "company": "Hive",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 1,
+   "seconds": 0.2
+  },
+  {
+   "company": "Hootsuite Inc",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 17,
+   "seconds": 0.9
+  },
+  {
+   "company": "Hyper Hippo Entertainment Ltd.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 8.5
+  },
+  {
+   "company": "IGG Canada",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 9,
+   "seconds": 11.2
+  },
+  {
+   "company": "Image Engine Design Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 20,
+   "seconds": 9.4
+  },
+  {
+   "company": "ISA Cybersecurity",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 1,
+   "seconds": 9.3
+  },
+  {
+   "company": "Jane App",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 20,
+   "seconds": 0.1
+  },
+  {
+   "company": "Jobber",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 38,
+   "seconds": 1.1
+  },
+  {
+   "company": "Kabam Games Inc.",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 30,
+   "seconds": 6.2
+  },
+  {
+   "company": "Kano",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 1,
+   "seconds": 0.1
+  },
+  {
+   "company": "Kobalt.io",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 4,
+   "seconds": 7.7
+  },
+  {
+   "company": "Ludia Games Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 5,
+   "seconds": 7.5
+  },
+  {
+   "company": "Mangrove Lithium",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 1,
+   "seconds": 7.9
+  },
+  {
+   "company": "MediaValet Inc.",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 0,
+   "seconds": 0.0
+  },
+  {
+   "company": "Mentimeter",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 13,
+   "seconds": 1.1
+  },
+  {
+   "company": "MetaLab Design Ltd",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 4,
+   "seconds": 1.1
+  },
+  {
+   "company": "MineSense Technologies",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 5,
+   "seconds": 28.2
+  },
+  {
+   "company": "Mitacs",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 3,
+   "seconds": 6.3
+  },
+  {
+   "company": "Nureva Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 11,
+   "seconds": 7.3
+  },
+  {
+   "company": "Offworld Industries",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 6,
+   "seconds": 12.7
+  },
+  {
+   "company": "Orpyx Medical Technologies Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 0,
+   "seconds": 8.0
+  },
+  {
+   "company": "Oxygen8",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 4,
+   "seconds": 0.1
+  },
+  {
+   "company": "PayByPhone Technologies Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 7,
+   "seconds": 7.9
+  },
+  {
+   "company": "Pelmorex Corp.",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 4,
+   "seconds": 11.3
+  },
+  {
+   "company": "PenderFund Capital Management / Pender Ventures",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 6,
+   "seconds": 1.6
+  },
+  {
+   "company": "Procurify",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 8,
+   "seconds": 0.1
+  },
+  {
+   "company": "Quandri Technologies Inc.",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 15,
+   "seconds": 10.3
+  },
+  {
+   "company": "Quartech Systems Ltd",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 2,
+   "seconds": 11.0
+  },
+  {
+   "company": "Reliable Controls",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 4,
+   "seconds": 3.1
+  },
+  {
+   "company": "Semaphore Solutions dba Labbit",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 3.3
+  },
+  {
+   "company": "ShipConstructor Software Inc. (DBA SSI)",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 4,
+   "seconds": 3.3
+  },
+  {
+   "company": "SkyBox Labs",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 9,
+   "seconds": 6.6
+  },
+  {
+   "company": "Sony Pictures Imageworks Canada Inc",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 45,
+   "seconds": 0.1
+  },
+  {
+   "company": "Sophos Inc",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 0,
+   "seconds": 7.4
+  },
+  {
+   "company": "Svante",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 12,
+   "seconds": 1.6
+  },
+  {
+   "company": "Tantalus Systems Corp",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 11,
+   "seconds": 4.1
+  },
+  {
+   "company": "TAO Solutions Inc.",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 1.6
+  },
+  {
+   "company": "Thinkific",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 3,
+   "seconds": 0.4
+  },
+  {
+   "company": "ThoughtExchange",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 1,
+   "seconds": 0.1
+  },
+  {
+   "company": "Tipalti",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 11,
+   "seconds": 1.1
+  },
+  {
+   "company": "Traction Rec",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 10,
+   "seconds": 4.2
+  },
+  {
+   "company": "Trulioo",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 29,
+   "seconds": 0.6
+  },
+  {
+   "company": "Visier Solutions Inc",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 1,
+   "seconds": 1.1
+  },
+  {
+   "company": "WildBrain",
+   "ats": "SmartRecruiters",
+   "ok": true,
+   "postings": 9,
+   "seconds": 1.0
+  },
+  {
+   "company": "Zayzoon",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 2,
+   "seconds": 2.1
+  }
+ ]
+}

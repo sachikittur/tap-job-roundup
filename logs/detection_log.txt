@@ -1,0 +1,343 @@
+193 companies in CSV, 193 to detect
+  Absorb Software                          Ashby            absorblms 
+  AltaML                                   Lever            altaml 
+  Absolute Software Corporation            Jobvite           Uses Jobvite, which has no public feed reader yet
+  Amii                                     BambooHR         amii 
+  airG                                     -                 No ATS link found on website or careers page
+  AlayaCare                                Greenhouse       alayacare 
+  7shifts                                  Ashby            7shifts 
+  Acuity Insights                          -                 No ATS link found on website or careers page
+  Andgo Systems                            Greenhouse       andgosystems 
+  Atimi Software                           Workable         atimi 
+  9Story                                   -                 No ATS link found on website or careers page
+  Aspect Biosystems                        Greenhouse       aspectbiosystems 
+  A Thinking Ape Entertainment Ltd         -                 No ATS link found on website or careers page
+  Auvik Networks                           Greenhouse       auviknetworks 
+  Avanti Software                          -                 No ATS link found on website or careers page
+  Arca Climate Technologies Inc.           -                 No ATS link found on website or careers page
+  APERA AI (US) INC                        -                 Website did not load
+  Avari Wireless Corporation               -                 No ATS link found on website or careers page
+  Archon Systems Inc.                      -                 No ATS link found on website or careers page
+  Avocette Technologies Inc                -                 No ATS link found on website or careers page
+  Beamdog                                  BambooHR         beamdog 
+  BCA Research                             Dayforce          Uses Dayforce, which has no public feed reader yet
+  Ballard Power Systems                    -                 No ATS link found on website or careers page
+  Asurtec Solutions Inc.                   -                 No ATS link found on website or careers page
+  BGC Engineering Inc.                     BambooHR         bgcengineering 
+  Bardel Entertainment Inc                 -                 Website did not load
+  Binary Stream Software Inc               BambooHR         binarystream 
+  BC College of Nurses and Midwives        -                 No ATS link found on website or careers page
+  Bucketlist Rewards                       BambooHR         bucketlist 
+  Carbon60                                 BambooHR         carbon60 
+  BC Financial Services Authority          -                 No ATS link found on website or careers page
+  BCAA                                     Workday           Uses Workday, which has no public feed reader yet
+  Broadsign Canada Company                 Greenhouse       broadsign 
+  Bursting Silver                          Breezy            Uses Breezy, which has no public feed reader yet
+  Coconut Software                         Greenhouse       coconutsoftware 
+  Canadian Digital Service                 -                 No ATS link found on website or careers page
+  Cinesite                                 -                 No ATS link found on website or careers page
+  Collabware                               Rippling          Uses Rippling, which has no public feed reader yet
+  Cespira                                  -                 Website did not load
+  Conversion                               Workable         thisisgain 
+  Conexiom                                 Greenhouse       conexiom 
+  commonsku                                -                 No ATS link found on website or careers page
+  Codename Entertainment                   -                 No ATS link found on website or careers page
+  Corcym Canada Corp.                      BambooHR         corcym 
+  d1g1t Inc.                               BambooHR         d1g1t 
+  Codan Communications                     -                 No ATS link found on website or careers page
+  Boast Capital                            ADP               Uses ADP, which has no public feed reader yet
+  Delta-Q Technologies Corp.               Workable         delta-q 
+  D-Wave Systems                           Rippling          Uses Rippling, which has no public feed reader yet
+  Clarius Mobile Health Corp               -                 No ATS link found on website or careers page
+  Cooledge Lighting Inc                    -                 No ATS link found on website or careers page
+  DarkVision Technologies Inc              -                 Website did not load
+  Copperleaf Technologies Inc. (IFS)       -                 Website did not load
+  EarthDaily Analytics                     JazzHR            Uses JazzHR, which has no public feed reader yet
+  Computer Modelling Group                 -                 No ATS link found on website or careers page
+  Digital Nova Scotia                      -                 Website did not load
+  Engineered Intelligence                  BambooHR         engineeredintel 
+  Fatigue Science                          BambooHR         fatiguescience 
+  Felix Health                             Ashby            Felix 
+  Financeit                                Workable         financeit 
+  Esri Canada                              SuccessFactors    Uses SuccessFactors, which has no public feed reader yet
+  Fispan                                   BambooHR         fispan 
+  FociSolutions                            BambooHR         foci 
+  FORM                                     Workable         form-2 
+  DCx Biotherapeutics Corporation          -                 No ATS link found on website or careers page
+  E-One Moli Energy                        -                 Website did not load
+  Gasket Games Corp                        BambooHR         gasketgames 
+  Elastic Path Software                    -                 Website did not load
+  Employment Hero                          -                 No ATS link found on website or careers page
+  Garmin Canada Inc.                       -                 No ATS link found on website or careers page
+  Firefly Software                         -                 No ATS link found on website or careers page
+  Eastside Games                           -                 Website did not load
+  Fortinet Technologies (Canada) ULC       -                 No ATS link found on website or careers page
+  General Fusion                           -                 No ATS link found on website or careers page
+  Gigadat Solutions Inc.                   -                 No ATS link found on website or careers page
+  Hive                                     Ashby            hive.co 
+  GeoComply Solutions Inc.                 -                 No ATS link found on website or careers page
+  Helcim                                   -                 Website did not load
+  Greenlight Innovation Corporation        -                 No ATS link found on website or careers page
+  Hololabs                                 -                 No ATS link found on website or careers page
+  Hyper Hippo Entertainment Ltd.           BambooHR         hyperhippoproductions 
+  Global Relay Communications Inc.         Greenhouse       globalrelay 
+  Hootsuite Inc                            Greenhouse       hootsuite 
+  Image Engine Design Inc.                 BambooHR         imageengine 
+  Hubbl Technologies                       -                 No ATS link found on website or careers page
+  Ideon Technologies                       Collage           Uses Collage, which has no public feed reader yet
+  Digital Domain                           -                 Website did not load
+  Hinterland Studio Inc                    -                 No ATS link found on website or careers page
+  ISA Cybersecurity                        BambooHR         isacybersecurity 
+  Guusto Gifts                             -                 No ATS link found on website or careers page
+  Jane App                                 Ashby            jane 
+  Inovia                                   -                 Website did not load
+  Ikomed                                   -                 No ATS link found on website or careers page
+  Improving Vancouver                      -                 No ATS link found on website or careers page
+  Kano                                     Greenhouse       kano 
+  Klue                                     iCIMS             Uses iCIMS, which has no public feed reader yet
+  Kobalt.io                                BambooHR         kobalt 
+  Jostle Corporation                       -                 No ATS link found on website or careers page
+  Land Title & Survey Authority of BC      Dayforce          Uses Dayforce, which has no public feed reader yet
+  LMI Technologies                         JazzHR            Uses JazzHR, which has no public feed reader yet
+  LodgeLink (Black Diamond Group)          SuccessFactors    Uses SuccessFactors, which has no public feed reader yet
+  Jobber                                   Ashby            jobber 
+  James Evans & Associates Ltd.            -                 No ATS link found on website or careers page
+  Ludia Games Inc.                         BambooHR         ludia 
+  IGG Canada                               -                 No ATS link found on website or careers page
+  Mangrove Lithium                         BambooHR         mangrovelithium 
+  MediaValet Inc.                          Greenhouse       mediavalet 
+  Mentimeter                               Greenhouse       mentimeter 
+  MetaLab Design Ltd                       Greenhouse       metalab 
+  Industrial Light & Magic (Lucasfilm)     -                 No ATS link found on website or careers page
+  Kabam Games Inc.                         Lever            kabam 
+  MineSense Technologies                   Lever            minesense 
+  Miru Smart Technologies                  Collage           Uses Collage, which has no public feed reader yet
+  Mitacs                                   BambooHR         mitacs 
+  Mogo Finance Technology Inc.             JazzHR            Uses JazzHR, which has no public feed reader yet
+  Meaningful Technology Inc.               -                 No ATS link found on website or careers page
+  Maplesoft                                -                 No ATS link found on website or careers page
+  Kits.com Technologies Inc                -                 No ATS link found on website or careers page
+  Next Level Games                         JazzHR            Uses JazzHR, which has no public feed reader yet
+  Novarc Technologies Inc                  ADP               Uses ADP, which has no public feed reader yet
+  NetNation (Ntirety)                      ADP               Uses ADP, which has no public feed reader yet
+  Offworld Industries                      BambooHR         owi 
+  Netflix, Inc.                            -                 No ATS link found on website or careers page
+  Orpyx Medical Technologies Inc.          BambooHR         orpyx 
+  Nureva Inc.                              -                 No ATS link found on website or careers page
+  Lucid Vision Labs Inc.                   -                 No ATS link found on website or careers page
+  Oxygen8                                  Greenhouse       oxygen8 
+  Osi Maritime Systems Ltd                 Dayforce          Uses Dayforce, which has no public feed reader yet
+  PayByPhone Technologies Inc.             BambooHR         paybyphone 
+  Nutanix                                  -                 No ATS link found on website or careers page
+  Novus                                    -                 No ATS link found on website or careers page
+  PenderFund Capital Management / Pender V BambooHR         penderfund 
+  Musora Media Inc.                        -                 No ATS link found on website or careers page
+  Nano One                                 -                 No ATS link found on website or careers page
+  Photonic Inc                             Pinpoint          Uses Pinpoint, which has no public feed reader yet
+  Pagefreezer                              Breezy            Uses Breezy, which has no public feed reader yet
+  Procurify                                Ashby            procurify 
+  Pelmorex Corp.                           Lever            pelmorex 
+  Pixieset                                 -                 No ATS link found on website or careers page
+  PureFacts Financial Solutions            Rippling          Uses Rippling, which has no public feed reader yet
+  Quandri Technologies Inc.                Lever            quandri 
+  Redlen Technologies Inc.                 Dayforce          Uses Dayforce, which has no public feed reader yet
+  Piranha Games                            -                 No ATS link found on website or careers page
+  Reliable Controls                        BambooHR         reliablecontrols 
+  Quartech Systems Ltd                     Lever            quartech-systems 
+  Perimeter Institute for Theoretical Phys -                 No ATS link found on website or careers page
+  Semaphore Solutions dba Labbit           BambooHR         semaphoresolutions 
+  Rival Technologies                       -                 No ATS link found on website or careers page
+  ShipConstructor Software Inc. (DBA SSI)  BambooHR         ssicorporate 
+  PNI Digital Media                        -                 No ATS link found on website or careers page
+  Punchcard Systems Inc.                   -                 No ATS link found on website or careers page
+  Rx Networks Inc                          -                 No ATS link found on website or careers page
+  Security Compass                         -                 Website did not load
+  RPM Software, LLC                        -                 No ATS link found on website or careers page
+  Sixone Labs                              -                 No ATS link found on website or careers page
+  Social Nature                            Breezy            Uses Breezy, which has no public feed reader yet
+  Rise People                              -                 No ATS link found on website or careers page
+  SemiosBio Technologies Inc.              -                 No ATS link found on website or careers page
+  Svante                                   BambooHR         svante 
+  Tantalus Systems Corp                    BambooHR         tantalussystems 
+  TAO Solutions Inc.                       BambooHR         taosolutions 
+  Sophos Inc                               Lever            sophos 
+  Technical Safety BC                      UKG               Uses UKG, which has no public feed reader yet
+  Steamclock Software Ltd.                 -                 No ATS link found on website or careers page
+  SkillsWave                               -                 No ATS link found on website or careers page
+  ThoughtExchange                          Greenhouse       thoughtexchange 
+  SkyBox Labs                              Lever            skyboxlabs 
+  Tipalti                                  Greenhouse       tipaltisolutions 
+  Thinkific                                Ashby            thinkific Website did not load
+  Traction Rec                             BambooHR         tractionrec 
+  Trulioo                                  Ashby            trulioo 
+  Traction Complete                        JazzHR            Uses JazzHR, which has no public feed reader yet
+  TuGo                                     ADP               Uses ADP, which has no public feed reader yet
+  summit nanotech                          -                 No ATS link found on website or careers page
+  ThoughtFarmer                            -                 No ATS link found on website or careers page
+  Visier Solutions Inc                     Ashby            visier 
+  Verathon                                 iCIMS             Uses iCIMS, which has no public feed reader yet
+  WildBrain                                SmartRecruiters  wildbrain 
+  Westport Fuel Systems                    ADP               Uses ADP, which has no public feed reader yet
+  VertiGIS North America Ltd.              Recruitee         Uses Recruitee, which has no public feed reader yet
+  Yoke (formerly CoPilot AI)               Breezy            Uses Breezy, which has no public feed reader yet
+  Wondershare Technology Inc               -                 No ATS link found on website or careers page
+  Terra Dygital Solutions Inc.             -                 No ATS link found on website or careers page
+  Zayzoon                                  Ashby            zayzoon 
+  Youtooz                                  Lever            leverdemo 
+  WorkSafeBC                               -                 No ATS link found on website or careers page
+  The Walt Disney Animation Studios        -                 No ATS link found on website or careers page
+  Thrive Health                            -                 No ATS link found on website or careers page
+  Zaber Technologies                       -                 No ATS link found on website or careers page
+  Xenon Pharmaceuticals Inc.               -                 No ATS link found on website or careers page
+  Zipline                                  -                 No ATS link found on website or careers page
+  Zoic Studios                             -                 No ATS link found on website or careers page
+  Sony Pictures Imageworks Canada Inc      Greenhouse       sonypicturesimageworks Website did not load
+
+ATS across all companies:
+  (none)             87
+  BambooHR           31
+  Greenhouse         17
+  Ashby              11
+  Lever              9
+  Workable           5
+  ADP                5
+  JazzHR             5
+  Dayforce           4
+  Breezy             4
+  Rippling           3
+  SuccessFactors     2
+  Collage            2
+  iCIMS              2
+  Jobvite            1
+  Workday            1
+  Pinpoint           1
+  UKG                1
+  Recruitee          1
+  SmartRecruiters    1
+
+Status across all companies:
+  Manual check       119
+  Feed found         74
+
+11 feeds were found by guessing from the company name; please confirm them in the report.
+
+Report: C:\Users\kittu\tap-job-roundup\logs\detection_report.csv
+193 companies in CSV, 88 to detect
+  airG                                     -                 No ATS link found on website or careers page
+  9Story                                   -                 No ATS link found on website or careers page
+  Arca Climate Technologies Inc.           -                 No ATS link found on website or careers page
+  Acuity Insights                          Workable         acuity-insights 
+  Avanti Software                          -                 No ATS link found on website or careers page
+  A Thinking Ape Entertainment Ltd         -                 No ATS link found on website or careers page
+  APERA AI (US) INC                        -                 Website did not load
+  Asurtec Solutions Inc.                   -                 No ATS link found on website or careers page
+  Avari Wireless Corporation               -                 No ATS link found on website or careers page
+  Archon Systems Inc.                      -                 No ATS link found on website or careers page
+  Bardel Entertainment Inc                 Workable         bardel-entertainment Website did not load
+  Avocette Technologies Inc                -                 No ATS link found on website or careers page
+  Ballard Power Systems                    -                 No ATS link found on website or careers page
+  Cinesite                                 -                 No ATS link found on website or careers page
+  BC College of Nurses and Midwives        -                 No ATS link found on website or careers page
+  Cespira                                  -                 Website did not load
+  BC Financial Services Authority          -                 No ATS link found on website or careers page
+  Canadian Digital Service                 -                 No ATS link found on website or careers page
+  commonsku                                -                 No ATS link found on website or careers page
+  Codename Entertainment                   -                 No ATS link found on website or careers page
+  Clarius Mobile Health Corp               -                 No ATS link found on website or careers page
+  Codan Communications                     -                 No ATS link found on website or careers page
+  Cooledge Lighting Inc                    -                 No ATS link found on website or careers page
+  DarkVision Technologies Inc              -                 Website did not load
+  E-One Moli Energy                        BambooHR         eonemolienergy Website did not load
+  Copperleaf Technologies Inc. (IFS)       -                 Website did not load
+  Digital Nova Scotia                      -                 Website did not load
+  Computer Modelling Group                 -                 No ATS link found on website or careers page
+  DCx Biotherapeutics Corporation          -                 No ATS link found on website or careers page
+  Elastic Path Software                    BambooHR         elasticpath Website did not load
+  Eastside Games                           -                 Website did not load
+  Garmin Canada Inc.                       -                 No ATS link found on website or careers page
+  Firefly Software                         -                 No ATS link found on website or careers page
+  Employment Hero                          -                 No ATS link found on website or careers page
+  General Fusion                           -                 No ATS link found on website or careers page
+  Fortinet Technologies (Canada) ULC       -                 No ATS link found on website or careers page
+  Gigadat Solutions Inc.                   -                 No ATS link found on website or careers page
+  Helcim                                   -                 Website did not load
+  GeoComply Solutions Inc.                 -                 No ATS link found on website or careers page
+  Greenlight Innovation Corporation        -                 No ATS link found on website or careers page
+  Hololabs                                 -                 No ATS link found on website or careers page
+  Hubbl Technologies                       -                 No ATS link found on website or careers page
+  Ikomed                                   -                 No ATS link found on website or careers page
+  Guusto Gifts                             -                 No ATS link found on website or careers page
+  Hinterland Studio Inc                    -                 No ATS link found on website or careers page
+  Inovia                                   -                 Website did not load
+  IGG Canada                               BambooHR         igg 
+  Digital Domain                           -                 Website did not load
+  Jostle Corporation                       -                 No ATS link found on website or careers page
+  Improving Vancouver                      -                 No ATS link found on website or careers page
+  Industrial Light & Magic (Lucasfilm)     -                 No ATS link found on website or careers page
+  Meaningful Technology Inc.               -                 No ATS link found on website or careers page
+  James Evans & Associates Ltd.            -                 No ATS link found on website or careers page
+  Maplesoft                                -                 No ATS link found on website or careers page
+  Netflix, Inc.                            -                 No ATS link found on website or careers page
+  Nano One                                 -                 No ATS link found on website or careers page
+  Kits.com Technologies Inc                -                 No ATS link found on website or careers page
+  Nureva Inc.                              BambooHR         nureva 
+  Novus                                    -                 No ATS link found on website or careers page
+  Lucid Vision Labs Inc.                   -                 No ATS link found on website or careers page
+  Nutanix                                  -                 No ATS link found on website or careers page
+  Musora Media Inc.                        -                 No ATS link found on website or careers page
+  Pixieset                                 -                 No ATS link found on website or careers page
+  Piranha Games                            -                 No ATS link found on website or careers page
+  Perimeter Institute for Theoretical Phys -                 No ATS link found on website or careers page
+  Rival Technologies                       -                 No ATS link found on website or careers page
+  PNI Digital Media                        -                 No ATS link found on website or careers page
+  Rise People                              -                 No ATS link found on website or careers page
+  Punchcard Systems Inc.                   -                 No ATS link found on website or careers page
+  Rx Networks Inc                          -                 No ATS link found on website or careers page
+  RPM Software, LLC                        -                 No ATS link found on website or careers page
+  Sixone Labs                              -                 No ATS link found on website or careers page
+  Security Compass                         -                 Website did not load
+  Steamclock Software Ltd.                 -                 No ATS link found on website or careers page
+  SemiosBio Technologies Inc.              -                 No ATS link found on website or careers page
+  SkillsWave                               -                 No ATS link found on website or careers page
+  ThoughtFarmer                            -                 No ATS link found on website or careers page
+  summit nanotech                          -                 No ATS link found on website or careers page
+  Wondershare Technology Inc               -                 No ATS link found on website or careers page
+  Terra Dygital Solutions Inc.             -                 No ATS link found on website or careers page
+  WorkSafeBC                               -                 No ATS link found on website or careers page
+  Youtooz                                  -                 No ATS link found on website or careers page
+  Zaber Technologies                       -                 No ATS link found on website or careers page
+  Thrive Health                            -                 No ATS link found on website or careers page
+  Zipline                                  -                 No ATS link found on website or careers page
+  Xenon Pharmaceuticals Inc.               -                 No ATS link found on website or careers page
+  The Walt Disney Animation Studios        -                 No ATS link found on website or careers page
+  Zoic Studios                             -                 No ATS link found on website or careers page
+
+ATS across all companies:
+  (none)             82
+  BambooHR           35
+  Greenhouse         17
+  Ashby              11
+  Lever              8
+  Workable           7
+  ADP                5
+  JazzHR             5
+  Dayforce           4
+  Breezy             4
+  Rippling           3
+  SuccessFactors     2
+  Collage            2
+  iCIMS              2
+  Jobvite            1
+  Workday            1
+  Pinpoint           1
+  UKG                1
+  Recruitee          1
+  SmartRecruiters    1
+
+Status across all companies:
+  Manual check       114
+  Feed found         79
+
+6 feeds were found by guessing from the company name; please confirm them in the report.
+
+Report: logs\detection_report_pass2.csv

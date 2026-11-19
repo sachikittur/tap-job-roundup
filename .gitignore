@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+Thumbs.db
+# Local scratch output; the weekly run log under logs/ IS committed
+data/*.tmp
+logs/test_*
