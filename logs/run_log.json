@@ -1,118 +1,157 @@
 {
- "run_date": "2026-11-19",
- "generated_at": "2026-11-19T12:54:06-05:00",
- "companies_in_csv": 193,
- "companies_fetched": 79,
+ "run_date": "2026-11-23",
+ "generated_at": "2026-11-23T11:18:00-05:00",
+ "companies_in_csv": 286,
+ "companies_fetched": 123,
  "companies_skipped": {
-  "no supported ATS": 114
+  "no supported ATS": 162,
+  "not Eligible": 1
  },
  "companies_failed": 0,
- "postings_seen": 713,
- "people_culture_postings": 13,
- "jobs_published": 13,
- "new_jobs": 13,
- "dropped_since_last_run": 0,
+ "postings_seen": 1940,
+ "people_culture_postings": 51,
+ "jobs_published": 39,
+ "new_jobs": 28,
+ "dropped_since_last_run": 2,
  "categories": {
-  "Early career": 6,
-  "Specialist": 5,
-  "Mid career": 1,
-  "Senior & executive": 1
+  "Senior & executive": 1,
+  "Mid career": 6,
+  "Leadership": 5,
+  "Fractional": 7,
+  "Specialist": 15,
+  "Early career": 5
+ },
+ "streams": {
+  "member": {
+   "count": 11,
+   "new_count": 0,
+   "categories": {
+    "Early career": 5,
+    "Specialist": 5,
+    "Mid career": 1
+   }
+  },
+  "canadian_tech": {
+   "count": 28,
+   "new_count": 28,
+   "categories": {
+    "Senior & executive": 1,
+    "Mid career": 5,
+    "Leadership": 5,
+    "Fractional": 7,
+    "Specialist": 10
+   }
+  }
  },
  "failures": [],
  "companies": [
   {
    "company": "7shifts",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
    "postings": 11,
-   "seconds": 0.8
+   "seconds": 1.1
   },
   {
    "company": "Absorb Software",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
    "postings": 17,
-   "seconds": 2.4
+   "seconds": 2.8
   },
   {
    "company": "Acuity Insights",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
    "postings": 13,
-   "seconds": 0.9
+   "seconds": 1.1
   },
   {
    "company": "AlayaCare",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 26,
-   "seconds": 0.8
+   "postings": 28,
+   "seconds": 1.1
   },
   {
    "company": "AltaML",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
    "postings": 4,
-   "seconds": 1.2
+   "seconds": 1.3
   },
   {
    "company": "Amii",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 9,
-   "seconds": 1.0
+   "postings": 5,
+   "seconds": 1.3
   },
   {
    "company": "Andgo Systems",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 4,
+   "postings": 3,
    "seconds": 1.0
   },
   {
    "company": "Aspect Biosystems",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 9,
-   "seconds": 2.6
+   "seconds": 2.4
   },
   {
    "company": "Atimi Software",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
    "postings": 2,
-   "seconds": 1.1
+   "seconds": 1.6
   },
   {
    "company": "Auvik Networks",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 6,
-   "seconds": 3.9
+   "postings": 5,
+   "seconds": 3.7
   },
   {
    "company": "Bardel Entertainment Inc",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
    "postings": 8,
-   "seconds": 2.3
+   "seconds": 2.8
   },
   {
    "company": "Beamdog",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 1,
-   "seconds": 0.7
+   "seconds": 0.8
   },
   {
    "company": "BGC Engineering Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 32,
-   "seconds": 2.1
+   "postings": 35,
+   "seconds": 1.8
   },
   {
    "company": "Binary Stream Software Inc",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 7,
@@ -120,34 +159,39 @@
   },
   {
    "company": "Broadsign Canada Company",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 12,
-   "seconds": 3.3
+   "postings": 11,
+   "seconds": 3.0
   },
   {
    "company": "Bucketlist Rewards",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 2,
-   "seconds": 4.1
+   "seconds": 4.2
   },
   {
    "company": "Carbon60",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 5,
-   "seconds": 5.6
+   "seconds": 5.1
   },
   {
    "company": "Coconut Software",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 3,
-   "seconds": 3.3
+   "postings": 2,
+   "seconds": 3.0
   },
   {
    "company": "Conexiom",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 5,
@@ -155,90 +199,103 @@
   },
   {
    "company": "Conversion",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
-   "postings": 5,
+   "postings": 4,
    "seconds": 0.4
   },
   {
    "company": "Corcym Canada Corp.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 7,
-   "seconds": 5.2
+   "seconds": 5.1
   },
   {
    "company": "d1g1t Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 7,
-   "seconds": 6.4
+   "seconds": 6.3
   },
   {
    "company": "Delta-Q Technologies Corp.",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
-   "postings": 1,
-   "seconds": 0.1
+   "postings": 0,
+   "seconds": 0.4
   },
   {
    "company": "E-One Moli Energy",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 2,
-   "seconds": 15.1
+   "seconds": 6.6
   },
   {
    "company": "Elastic Path Software",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 3,
-   "seconds": 8.4
+   "seconds": 7.9
   },
   {
    "company": "Engineered Intelligence",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 8,
-   "seconds": 9.0
+   "seconds": 8.8
   },
   {
    "company": "Fatigue Science",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 2,
-   "seconds": 18.3
+   "seconds": 10.1
   },
   {
    "company": "Felix Health",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
-   "postings": 33,
-   "seconds": 0.5
+   "postings": 13,
+   "seconds": 0.1
   },
   {
    "company": "Financeit",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
    "postings": 12,
-   "seconds": 0.5
+   "seconds": 0.1
   },
   {
    "company": "Fispan",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 15,
-   "seconds": 8.9
+   "postings": 12,
+   "seconds": 9.9
   },
   {
    "company": "FociSolutions",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 4,
-   "seconds": 1.6
+   "postings": 3,
+   "seconds": 10.1
   },
   {
    "company": "FORM",
+   "stream": "member",
    "ats": "Workable",
    "ok": true,
    "postings": 2,
@@ -246,13 +303,15 @@
   },
   {
    "company": "Gasket Games Corp",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 0,
-   "seconds": 9.8
+   "seconds": 9.9
   },
   {
    "company": "Global Relay Communications Inc.",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 44,
@@ -260,69 +319,79 @@
   },
   {
    "company": "Hive",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
-   "postings": 1,
-   "seconds": 0.2
-  },
-  {
-   "company": "Hootsuite Inc",
-   "ats": "Greenhouse",
-   "ok": true,
-   "postings": 17,
-   "seconds": 0.9
-  },
-  {
-   "company": "Hyper Hippo Entertainment Ltd.",
-   "ats": "BambooHR",
-   "ok": true,
-   "postings": 2,
-   "seconds": 8.5
-  },
-  {
-   "company": "IGG Canada",
-   "ats": "BambooHR",
-   "ok": true,
-   "postings": 9,
-   "seconds": 11.2
-  },
-  {
-   "company": "Image Engine Design Inc.",
-   "ats": "BambooHR",
-   "ok": true,
-   "postings": 20,
-   "seconds": 9.4
-  },
-  {
-   "company": "ISA Cybersecurity",
-   "ats": "BambooHR",
-   "ok": true,
-   "postings": 1,
-   "seconds": 9.3
-  },
-  {
-   "company": "Jane App",
-   "ats": "Ashby",
-   "ok": true,
-   "postings": 20,
+   "postings": 0,
    "seconds": 0.1
   },
   {
-   "company": "Jobber",
+   "company": "Hootsuite Inc",
+   "stream": "member",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 18,
+   "seconds": 1.0
+  },
+  {
+   "company": "Hyper Hippo Entertainment Ltd.",
+   "stream": "member",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 1,
+   "seconds": 8.8
+  },
+  {
+   "company": "IGG Canada",
+   "stream": "member",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 8,
+   "seconds": 19.1
+  },
+  {
+   "company": "Image Engine Design Inc.",
+   "stream": "member",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 16,
+   "seconds": 9.6
+  },
+  {
+   "company": "ISA Cybersecurity",
+   "stream": "member",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 1,
+   "seconds": 9.2
+  },
+  {
+   "company": "Jane App",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
-   "postings": 38,
+   "postings": 21,
+   "seconds": 0.5
+  },
+  {
+   "company": "Jobber",
+   "stream": "member",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 34,
    "seconds": 1.1
   },
   {
    "company": "Kabam Games Inc.",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
-   "postings": 30,
-   "seconds": 6.2
+   "postings": 32,
+   "seconds": 0.9
   },
   {
    "company": "Kano",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 1,
@@ -330,34 +399,39 @@
   },
   {
    "company": "Kobalt.io",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 4,
-   "seconds": 7.7
+   "seconds": 7.8
   },
   {
    "company": "Ludia Games Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 5,
-   "seconds": 7.5
+   "postings": 4,
+   "seconds": 8.5
   },
   {
    "company": "Mangrove Lithium",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 1,
-   "seconds": 7.9
+   "seconds": 9.4
   },
   {
    "company": "MediaValet Inc.",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 0,
-   "seconds": 0.0
+   "seconds": 0.5
   },
   {
    "company": "Mentimeter",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 13,
@@ -365,48 +439,55 @@
   },
   {
    "company": "MetaLab Design Ltd",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 4,
-   "seconds": 1.1
+   "seconds": 1.6
   },
   {
    "company": "MineSense Technologies",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
-   "postings": 5,
-   "seconds": 28.2
+   "postings": 8,
+   "seconds": 0.9
   },
   {
    "company": "Mitacs",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 3,
-   "seconds": 6.3
+   "postings": 2,
+   "seconds": 6.7
   },
   {
    "company": "Nureva Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 11,
-   "seconds": 7.3
+   "seconds": 7.6
   },
   {
    "company": "Offworld Industries",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 6,
-   "seconds": 12.7
+   "postings": 4,
+   "seconds": 9.1
   },
   {
    "company": "Orpyx Medical Technologies Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 0,
-   "seconds": 8.0
+   "seconds": 9.2
   },
   {
    "company": "Oxygen8",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
    "postings": 4,
@@ -414,146 +495,167 @@
   },
   {
    "company": "PayByPhone Technologies Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 7,
-   "seconds": 7.9
+   "seconds": 9.2
   },
   {
    "company": "Pelmorex Corp.",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
-   "postings": 4,
-   "seconds": 11.3
+   "postings": 3,
+   "seconds": 1.5
   },
   {
    "company": "PenderFund Capital Management / Pender Ventures",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 6,
-   "seconds": 1.6
+   "seconds": 8.1
   },
   {
    "company": "Procurify",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
-   "postings": 8,
-   "seconds": 0.1
+   "postings": 10,
+   "seconds": 0.4
   },
   {
    "company": "Quandri Technologies Inc.",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
    "postings": 15,
-   "seconds": 10.3
+   "seconds": 0.8
   },
   {
    "company": "Quartech Systems Ltd",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
    "postings": 2,
-   "seconds": 11.0
+   "seconds": 3.2
   },
   {
    "company": "Reliable Controls",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 4,
-   "seconds": 3.1
+   "seconds": 8.0
   },
   {
    "company": "Semaphore Solutions dba Labbit",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 2,
-   "seconds": 3.3
+   "seconds": 8.0
   },
   {
    "company": "ShipConstructor Software Inc. (DBA SSI)",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 4,
-   "seconds": 3.3
+   "seconds": 8.3
   },
   {
    "company": "SkyBox Labs",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
-   "postings": 9,
-   "seconds": 6.6
+   "postings": 11,
+   "seconds": 0.7
   },
   {
    "company": "Sony Pictures Imageworks Canada Inc",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 45,
+   "postings": 46,
    "seconds": 0.1
   },
   {
    "company": "Sophos Inc",
+   "stream": "member",
    "ats": "Lever",
    "ok": true,
    "postings": 0,
-   "seconds": 7.4
+   "seconds": 1.0
   },
   {
    "company": "Svante",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 12,
-   "seconds": 1.6
+   "seconds": 7.9
   },
   {
    "company": "Tantalus Systems Corp",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 11,
-   "seconds": 4.1
+   "postings": 12,
+   "seconds": 9.4
   },
   {
    "company": "TAO Solutions Inc.",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
    "postings": 2,
-   "seconds": 1.6
+   "seconds": 9.5
   },
   {
    "company": "Thinkific",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
    "postings": 3,
-   "seconds": 0.4
-  },
-  {
-   "company": "ThoughtExchange",
-   "ats": "Greenhouse",
-   "ok": true,
-   "postings": 1,
    "seconds": 0.1
   },
   {
-   "company": "Tipalti",
+   "company": "ThoughtExchange",
+   "stream": "member",
    "ats": "Greenhouse",
    "ok": true,
-   "postings": 11,
+   "postings": 1,
+   "seconds": 0.0
+  },
+  {
+   "company": "Tipalti",
+   "stream": "member",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 10,
    "seconds": 1.1
   },
   {
    "company": "Traction Rec",
+   "stream": "member",
    "ats": "BambooHR",
    "ok": true,
-   "postings": 10,
-   "seconds": 4.2
+   "postings": 8,
+   "seconds": 13.1
   },
   {
    "company": "Trulioo",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
-   "postings": 29,
-   "seconds": 0.6
+   "postings": 28,
+   "seconds": 0.1
   },
   {
    "company": "Visier Solutions Inc",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
    "postings": 1,
@@ -561,17 +663,371 @@
   },
   {
    "company": "WildBrain",
+   "stream": "member",
    "ats": "SmartRecruiters",
    "ok": true,
-   "postings": 9,
-   "seconds": 1.0
+   "postings": 8,
+   "seconds": 1.1
   },
   {
    "company": "Zayzoon",
+   "stream": "member",
    "ats": "Ashby",
    "ok": true,
    "postings": 2,
+   "seconds": 0.7
+  },
+  {
+   "company": "1Password",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 80,
+   "seconds": 1.2
+  },
+  {
+   "company": "Achievers",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 16,
+   "seconds": 0.9
+  },
+  {
+   "company": "Behaviour Interactive",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 20,
+   "seconds": 3.6
+  },
+  {
+   "company": "Benevity",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 18,
+   "seconds": 1.3
+  },
+  {
+   "company": "Bold Commerce",
+   "stream": "canadian_tech",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 0,
+   "seconds": 6.2
+  },
+  {
+   "company": "Borrowell",
+   "stream": "canadian_tech",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 3,
+   "seconds": 0.1
+  },
+  {
+   "company": "Botpress",
+   "stream": "canadian_tech",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 14,
+   "seconds": 1.1
+  },
+  {
+   "company": "Circle Cardiovascular Imaging",
+   "stream": "canadian_tech",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 10,
+   "seconds": 6.6
+  },
+  {
+   "company": "Clearco",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 5,
+   "seconds": 0.1
+  },
+  {
+   "company": "CoLab Software",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 27,
+   "seconds": 0.1
+  },
+  {
+   "company": "Cohere",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 123,
+   "seconds": 1.1
+  },
+  {
+   "company": "D2L",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 31,
+   "seconds": 0.5
+  },
+  {
+   "company": "Docebo",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 34,
+   "seconds": 1.3
+  },
+  {
+   "company": "Flinks",
+   "stream": "canadian_tech",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 4,
+   "seconds": 0.5
+  },
+  {
+   "company": "Float",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 19,
+   "seconds": 2.2
+  },
+  {
+   "company": "Fullscript",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 16,
+   "seconds": 4.7
+  },
+  {
+   "company": "Geotab",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 60,
+   "seconds": 0.2
+  },
+  {
+   "company": "Hopper",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 29,
+   "seconds": 2.0
+  },
+  {
+   "company": "Introhive",
+   "stream": "canadian_tech",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 3,
+   "seconds": 5.3
+  },
+  {
+   "company": "Kepler Communications",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 13,
+   "seconds": 4.4
+  },
+  {
+   "company": "KOHO",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 8,
+   "seconds": 1.1
+  },
+  {
+   "company": "Later",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 33,
+   "seconds": 0.1
+  },
+  {
+   "company": "Lightspeed Commerce",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 123,
+   "seconds": 1.0
+  },
+  {
+   "company": "Loopio",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 14,
+   "seconds": 2.4
+  },
+  {
+   "company": "Magnet Forensics",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 33,
+   "seconds": 6.0
+  },
+  {
+   "company": "Maple",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 12,
+   "seconds": 10.9
+  },
+  {
+   "company": "Miovision",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 13,
+   "seconds": 2.2
+  },
+  {
+   "company": "Neo Financial",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 56,
    "seconds": 2.1
+  },
+  {
+   "company": "Nuvei",
+   "stream": "canadian_tech",
+   "ats": "Workable",
+   "ok": true,
+   "postings": 76,
+   "seconds": 0.2
+  },
+  {
+   "company": "PointClickCare",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 86,
+   "seconds": 12.0
+  },
+  {
+   "company": "Questrade",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 60,
+   "seconds": 0.1
+  },
+  {
+   "company": "Relic Entertainment",
+   "stream": "canadian_tech",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 2,
+   "seconds": 1.4
+  },
+  {
+   "company": "Shakepay",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 7,
+   "seconds": 0.6
+  },
+  {
+   "company": "Showpass",
+   "stream": "canadian_tech",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 4,
+   "seconds": 2.0
+  },
+  {
+   "company": "Solink",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 23,
+   "seconds": 1.2
+  },
+  {
+   "company": "Spare",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 6,
+   "seconds": 2.1
+  },
+  {
+   "company": "Top Hat",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 11,
+   "seconds": 2.1
+  },
+  {
+   "company": "Uberflip",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 0,
+   "seconds": 10.3
+  },
+  {
+   "company": "Vendasta",
+   "stream": "canadian_tech",
+   "ats": "BambooHR",
+   "ok": true,
+   "postings": 11,
+   "seconds": 1.0
+  },
+  {
+   "company": "Waabi",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 84,
+   "seconds": 11.7
+  },
+  {
+   "company": "Wattpad",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 20,
+   "seconds": 11.9
+  },
+  {
+   "company": "Wave Financial",
+   "stream": "canadian_tech",
+   "ats": "Lever",
+   "ok": true,
+   "postings": 9,
+   "seconds": 13.9
+  },
+  {
+   "company": "Wealthsimple",
+   "stream": "canadian_tech",
+   "ats": "Ashby",
+   "ok": true,
+   "postings": 38,
+   "seconds": 0.1
+  },
+  {
+   "company": "Workleap",
+   "stream": "canadian_tech",
+   "ats": "Greenhouse",
+   "ok": true,
+   "postings": 10,
+   "seconds": 0.1
   }
  ]
 }

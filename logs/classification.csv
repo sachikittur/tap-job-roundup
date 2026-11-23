@@ -1,14 +1,40 @@
-Category,Rule,Title,Company,Location,Employment type,URL
-Early career,early-title (title 'Co-op'),People Operations and Payroll Co-Op,Kabam Games Inc.,"Vancouver, BC",Co-op / Intern,https://jobs.lever.co/kabam/83e8f972-f58a-4b88-bc9e-7a818b4f9a5b
-Early career,early-title (title 'Intern*'),"Co-op/Intern, People Team & Operations - Winter 2027",Hootsuite Inc,"Vancouver, BC · Toronto, ON · Calgary, AB · Ottawa, ON · Edmonton, AB",,https://job-boards.greenhouse.io/hootsuite/jobs/8392381
-Early career,early-experience (asks for 2 years),HR & Admin Generalist - POPJOY Retail,IGG Canada,"Vancouver, BC",Full-Time,https://igg.bamboohr.com/careers/293
-Specialist,specialist-function (title 'Talent Acquisition'),"Senior Manager, Talent Acquisition",Trulioo,"Vancouver, BC · Toronto, ON",Full-time,https://jobs.ashbyhq.com/trulioo/4f87a9f2-2c5d-4f44-960f-0d7c3101e625
-Early career,early-title (title 'Coordinator'),People & Office Coordinator (Hybrid),Traction Rec,"Vancouver, BC",Full-Time,https://tractionrec.bamboohr.com/careers/157
-Specialist,specialist-function (title 'Talent Acquisition'),Talent Acquisition Coordinator,Trulioo,"Vancouver, BC",Full-time,https://jobs.ashbyhq.com/trulioo/0a6cd44d-b8b2-46fa-9763-b07b8c4dc65c
-Specialist,specialist-function (title 'Talent Acquisition'),Talent Acquisition Specialist,Broadsign Canada Company,"Montreal, QC",,https://job-boards.greenhouse.io/broadsign/jobs/8041446003
-Specialist,specialist-function (title 'Talent Acquisition'),Talent Acquisition Specialist,Financeit,"Toronto, ON",Full-time,https://apply.workable.com/j/660916DD3C
-Early career,early-title (title 'Associate'),Associate People Business Partner,AlayaCare,"Toronto, ON",,https://alayacare.com/open-positions?gh_jid=8903199002
-Mid career,mid-title (title 'Business Partner'),Senior People Business Partner,AlayaCare,"Toronto, ON",,https://alayacare.com/open-positions?gh_jid=8889462002
-Early career,early-title (title 'Coordinator'),Workplace Experience Coordinator,Trulioo,"Vancouver, BC",Full-time,https://jobs.ashbyhq.com/trulioo/af284b6a-10bf-43e8-9e03-62084d19e5db
-Senior & executive,exec-title (title 'Head of People'),Head of People,MineSense Technologies,"Vancouver, BC",Full-Time Employee,https://jobs.lever.co/minesense/90bb8c5b-32aa-4692-8e38-c57d1e0353dd
-Specialist,specialist-function (title 'Payroll'),"Manager, Payroll",Kabam Games Inc.,"Vancouver, BC",Regular Full-time (RFT),https://jobs.lever.co/kabam/8f9bdbed-c142-4b52-a71a-d2d9d29d8f11
+Stream,Category,Rule,Title,Company,Location,Employment type,URL
+canadian_tech,Senior & executive,exec-title (title 'Chief Human Resources Officer'),Chief Human Resources Officer,Achievers,"Toronto, ON",Full-time permanent,https://jobs.lever.co/achievers/3da4b2ca-cc45-460b-b3b5-9a043c794820
+canadian_tech,Mid career,mid-title (title 'Manager'),"Senior Manager, AI Transformation (HR & Operations)",1Password,Remote (Canada),Full-time,https://jobs.ashbyhq.com/1password/a835fee8-dc26-44de-87bd-39e081291857
+canadian_tech,Leadership,director-title (title 'Director'),Director of People Operations,Docebo,"Toronto, ON",Full-time,https://jobs.ashbyhq.com/docebo/11086621-8c72-4b05-9602-1373c7fe3ffc
+canadian_tech,Fractional,fractional-title (title 'Contract'),Recruiter - 6 months contract,Lightspeed Commerce,"Montreal, QC",Full-time,https://jobs.ashbyhq.com/lightspeedhq/e818373d-e6bf-4c42-9523-346740cefa20
+canadian_tech,Specialist,specialist-function (title 'Compensation'),Tech Compensation Business Partner,Cohere,"Toronto, ON",Full-time,https://jobs.ashbyhq.com/cohere/5a61f4d2-5a52-4c98-a8a9-71fbfd67e485
+canadian_tech,Mid career,mid-title (title 'Partner'),"Talent Partner, Tech",Cohere,"Toronto, ON",Full-time,https://jobs.ashbyhq.com/cohere/0067eb76-92af-497e-a5f8-7521716552f9
+canadian_tech,Fractional,fractional-employment-type (employment type 'Temporary'),Early Talent Acquisition Specialist (12 Month Contract),D2L,"Kitchener, ON · Remote (Canada) · Toronto, ON",Temporary,https://www.d2l.com/careers/jobs/?job_id=8394405&gh_jid=8394405
+canadian_tech,Fractional,fractional-employment-type (employment type 'Temporary'),"Talent Acquisition Partner/Senior Recruiter, Go to Market (12 Month Contract)",D2L,"Kitchener, ON · Remote (Canada) · Toronto, ON",Temporary,https://www.d2l.com/careers/jobs/?job_id=8394429&gh_jid=8394429
+canadian_tech,Specialist,specialist-function (title 'Talent Acquisition'),"Talent Acquisition Partner/Senior Recruiter, Technical and Product",D2L,"Kitchener, ON · Remote (Canada) · Toronto, ON",Full-time,https://www.d2l.com/careers/jobs/?job_id=8394384&gh_jid=8394384
+canadian_tech,Specialist,specialist-function (title 'People Systems'),"Lead, People Systems",Wealthsimple,Remote (Canada),Full-time,https://jobs.ashbyhq.com/wealthsimple/1ee8a3e0-0522-4d3d-9bb1-4f781eb341e1
+canadian_tech,Fractional,fractional-title (title 'Contract'),"Specialist, People Operations (12 month contract)",Wealthsimple,Remote (Canada),Full-time,https://jobs.ashbyhq.com/wealthsimple/3de8c796-7525-4f4e-992b-b1b703b71c1a
+canadian_tech,Leadership,director-title (title 'Director'),"Senior Director, Talent Acquisition",CoLab Software,Remote (Canada),,https://job-boards.greenhouse.io/colabsoftware/jobs/5476662008
+canadian_tech,Specialist,specialist-function (title 'Benefits'),"Manager, Global Benefits",Geotab,Remote (Canada),Permanent Full Time,https://job-boards.greenhouse.io/geotab/jobs/5406550008
+canadian_tech,Specialist,specialist-function (title 'Benefits'),"Senior Specialist, Benefits",Wealthsimple,Remote (Canada),Full-time,https://jobs.ashbyhq.com/wealthsimple/9c9cab09-b275-4a5c-b4b0-bb397a15fcc4
+canadian_tech,Mid career,mid-title (title 'Partner'),Senior Talent Partner,Shakepay,Remote (Canada),,https://job-boards.greenhouse.io/shakepay/jobs/4750517005
+canadian_tech,Fractional,fractional-employment-type (employment type 'Contract'),Global Payroll and Benefits Administrator,Achievers,"Toronto, ON",Mat-leave contract,https://jobs.lever.co/achievers/cc9c93b5-9f46-4f77-b017-31236601887b
+canadian_tech,Specialist,specialist-function (title 'HRIS'),Sr. HRIS Analyst,PointClickCare,"Mississauga, ON",Full-Time,https://jobs.lever.co/pointclickcare/c27a6547-a9fa-4a3e-a8a2-424f2e086f8e
+canadian_tech,Specialist,specialist-function (title 'Learning'),"Lead, Learning & Employee Experience",Wealthsimple,Remote (Canada),Full-time,https://jobs.ashbyhq.com/wealthsimple/1f61607b-85f9-440b-8345-64889add3bb8
+canadian_tech,Specialist,specialist-function (title 'Benefits'),Manager of Payroll and Benefits (Global),Loopio,"Toronto, ON",Full-time,https://jobs.ashbyhq.com/loopio/f8287c68-bfee-4c1f-aa1f-7524349fdf7c
+canadian_tech,Leadership,director-title (title 'Director'),"Senior Director, Global Total Rewards (14-Month Contract)",1Password,Remote (Canada),Contract,https://jobs.ashbyhq.com/1password/2f038881-4932-45d8-97d6-1390bd7f756f
+canadian_tech,Mid career,mid-title (title 'Business Partner'),Senior Human Resources Business Partner,Achievers,"Toronto, ON",Full-time permanent,https://jobs.lever.co/achievers/4a43689e-97ee-41cd-bba5-49dea9580c18
+canadian_tech,Leadership,director-title (title 'Director'),"Director, People Strategy and HR Portfolio (Project) Management",PointClickCare,"Mississauga, ON",Full-Time,https://jobs.lever.co/pointclickcare/c9e4c36c-27f6-48ae-b0d0-f5464b19c6a5
+canadian_tech,Fractional,fractional-description (description 'month contract'),People Operations Analyst/Analyste aux opérations des personnes,Nuvei,"Montreal, QC",,https://apply.workable.com/j/B844DA63A1
+canadian_tech,Specialist,specialist-function (title 'Learning and Development'),Senior Learning and Development Advisor |Conseiller(ère) en Apprentissage et Développement Senior(e),Behaviour Interactive,"Montreal, QC",Permanent Full-Time | Permanent temps-plein,https://jobs.lever.co/bhvr/36c9db9c-2e1a-4ab3-b3fa-508bef9f1a48
+canadian_tech,Fractional,fractional-title (title 'Contract'),Bilingual Talent Acquisition Specialist - 12 month contract (English/French),Nuvei,Remote (Canada),,https://apply.workable.com/j/E28BFB005B
+canadian_tech,Specialist,specialist-function (title 'Benefits'),"Manager, Global Benefits",Geotab,"Oakville, ON · Toronto, ON · Waterloo, ON · Remote (Canada)",Permanent Full Time,https://job-boards.greenhouse.io/geotab/jobs/5406548008
+canadian_tech,Leadership,director-title (title 'Director'),"Sr. Director, HR Technology and AI Enablement",PointClickCare,"Remote (Canada) · Mississauga, ON",Full-Time,https://jobs.lever.co/pointclickcare/f949e9b0-23dc-4f31-8e46-79eeb79bb79b
+canadian_tech,Mid career,mid-title (title 'Partner'),Sr. Talent Development Partner,PointClickCare,"Mississauga, ON",Full-Time,https://jobs.lever.co/pointclickcare/defdd9d1-346c-4a6b-a9b9-63987ca27601
+member,Early career,early-title (title 'Co-op'),People Operations and Payroll Co-Op,Kabam Games Inc.,"Vancouver, BC",Co-op / Intern,https://jobs.lever.co/kabam/83e8f972-f58a-4b88-bc9e-7a818b4f9a5b
+member,Early career,early-experience (asks for 2 years),HR & Admin Generalist - POPJOY Retail,IGG Canada,"Vancouver, BC",Full-Time,https://igg.bamboohr.com/careers/293
+member,Specialist,specialist-function (title 'Talent Acquisition'),"Senior Manager, Talent Acquisition",Trulioo,"Vancouver, BC · Toronto, ON",Full-time,https://jobs.ashbyhq.com/trulioo/4f87a9f2-2c5d-4f44-960f-0d7c3101e625
+member,Early career,early-title (title 'Coordinator'),People & Office Coordinator (Hybrid),Traction Rec,"Vancouver, BC",Full-Time,https://tractionrec.bamboohr.com/careers/157
+member,Specialist,specialist-function (title 'Talent Acquisition'),Talent Acquisition Coordinator,Trulioo,"Vancouver, BC",Full-time,https://jobs.ashbyhq.com/trulioo/0a6cd44d-b8b2-46fa-9763-b07b8c4dc65c
+member,Specialist,specialist-function (title 'Talent Acquisition'),Talent Acquisition Specialist,Broadsign Canada Company,"Montreal, QC",,https://job-boards.greenhouse.io/broadsign/jobs/8041446003
+member,Specialist,specialist-function (title 'Talent Acquisition'),Talent Acquisition Specialist,Financeit,"Toronto, ON",Full-time,https://apply.workable.com/j/660916DD3C
+member,Early career,early-title (title 'Associate'),Associate People Business Partner,AlayaCare,"Toronto, ON",,https://alayacare.com/open-positions?gh_jid=8903199002
+member,Mid career,mid-title (title 'Business Partner'),Senior People Business Partner,AlayaCare,"Toronto, ON",,https://alayacare.com/open-positions?gh_jid=8889462002
+member,Early career,early-title (title 'Coordinator'),Workplace Experience Coordinator,Trulioo,"Vancouver, BC",Full-time,https://jobs.ashbyhq.com/trulioo/af284b6a-10bf-43e8-9e03-62084d19e5db
+member,Specialist,specialist-function (title 'Payroll'),"Manager, Payroll",Kabam Games Inc.,"Vancouver, BC",Regular Full-time (RFT),https://jobs.lever.co/kabam/8f9bdbed-c142-4b52-a71a-d2d9d29d8f11
