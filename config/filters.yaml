@@ -72,6 +72,8 @@ people_culture:
     - Talent Network
     - Talent Community
     - Talent Pool
+    - Talent Partnership*     # creator or influencer talent at marketing companies (Later, Nov 2026)
+    - Creator Partnership*
     - Benefits Advisor        # insurance sales roles at benefits companies; remove if you want them
     - Culture Media           # biotech "cell culture" style titles
     - Cell Culture

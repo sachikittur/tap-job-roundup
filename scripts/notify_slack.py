@@ -46,8 +46,15 @@ def join_and(parts: list[str]) -> str:
     return ", ".join(parts[:-1]) + " and " + parts[-1]
 
 
+def stream_of(job: dict) -> str:
+    return "canadian_tech" if job.get("stream") == "canadian_tech" else "member"
+
+
 def members_message(jobs_data: dict, page_url: str) -> dict:
-    jobs = jobs_data.get("jobs", [])
+    """Member roles lead; other Canadian tech roles get their own line, never mixed in."""
+    all_jobs = jobs_data.get("jobs", [])
+    jobs = [j for j in all_jobs if stream_of(j) == "member"]
+    others = [j for j in all_jobs if stream_of(j) == "canadian_tech"]
     new = [j for j in jobs if j.get("is_new")]
     link = f"<{page_url}|See them all>" if page_url else "See them all on the TAP Job Roundup page"
 
@@ -55,17 +62,28 @@ def members_message(jobs_data: dict, page_url: str) -> dict:
         counts = Counter(j["category"] for j in new)
         breakdown = esc(join_and([f"{counts[c]} {c}" for c in ORDER if counts.get(c)]))
         headline = (f"{plural(len(new), 'new People and Culture role', 'new People and Culture roles')} "
-                    f"this week: {breakdown}.")
+                    f"at TAP member companies this week: {breakdown}.")
         picks = sorted(new, key=lambda j: (ORDER.index(j["category"]) if j["category"] in ORDER else 99,
                                            j.get("company", "").lower()))[:HIGHLIGHTS]
         lines = [f"• <{j['url']}|{esc(j['title'])}>, {esc(j['company'])} ({esc(j['location'])})" for j in picks]
         more = len(new) - len(picks)
-        tail = f"{link}: {plural(len(jobs), 'role', 'roles')} open in total" + (
+        tail = f"{link}: {plural(len(jobs), 'member role', 'member roles')} open in total" + (
             f", including {more} more new this week." if more > 0 else ".")
     else:
-        headline = (f"No new People and Culture roles this week. "
+        headline = (f"No new People and Culture roles at TAP member companies this week. "
                     f"{plural(len(jobs), 'role is', 'roles are')} still open.")
         lines, tail = [], f"{link}."
+
+    if others:
+        new_others = sum(1 for j in others if j.get("is_new"))
+        other_link = (f"<{page_url.rstrip('/')}/?stream=canadian-tech|See the Canadian tech roles>"
+                      if page_url else "See them on the page")
+        if new_others:
+            tail += (f"\n\nAlso new this week at other Canadian tech companies: "
+                     f"{plural(new_others, 'role', 'roles')}. {other_link}.")
+        else:
+            tail += (f"\n\nOther Canadian tech companies have "
+                     f"{plural(len(others), 'role', 'roles')} open. {other_link}.")
 
     text = headline + "\n\n" + ("\n".join(lines) + "\n\n" if lines else "") + tail
     return {

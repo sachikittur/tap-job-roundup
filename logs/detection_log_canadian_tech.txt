@@ -1,0 +1,125 @@
+286 companies in CSV, 93 to detect
+  1Password                                Ashby            1password 
+  Achievers                                Lever            achievers 
+  Arcurve                                  Dayforce          Uses Dayforce, which has no public feed reader yet
+  Benevity                                 Ashby            benevity 
+  ApplyBoard                               Workday           Uses Workday, which has no public feed reader yet
+  Axonify                                  Gem               Uses Gem, which has no public feed reader yet
+  Bold Commerce                            BambooHR         boldcommerce 
+  Ada                                      -                 Website did not load
+  Borrowell                                Workable         borrowell Website did not load
+  Clearco                                  Ashby            clearco 
+  Assent                                   -                 No ATS link found on website or careers page
+  Behaviour Interactive                    Lever            bhvr 
+  Botpress                                 Workable         botpress 
+  Cohere                                   Ashby            cohere 
+  Certn                                    -                 No ATS link found on website or careers page
+  Circle Cardiovascular Imaging            BambooHR         circlecardiovascularimaging 
+  D2L                                      Greenhouse       d2l 
+  CoLab Software                           Greenhouse       colabsoftware 
+  Clio                                     -                 Website did not load
+  Bonfire Interactive                      -                 No ATS link found on website or careers page
+  Drivewyze                                Greenhouse       bestpass 
+  Coveo                                    -                 No ATS link found on website or careers page
+  Dapper Labs                              -                 No ATS link found on website or careers page
+  Docebo                                   Ashby            docebo 
+  Dye & Durham                             Dayforce          Uses Dayforce, which has no public feed reader yet
+  Dejero                                   UKG               Uses UKG, which has no public feed reader yet
+  Dialogue                                 -                 No ATS link found on website or careers page
+  Fullscript                               Lever            fullscript 
+  Hopper                                   Ashby            hopper 
+  Float                                    Ashby            float 
+  Flinks                                   Workable         flinks 
+  Geotab                                   Greenhouse       geotab 
+  Descartes Systems Group                  -                 No ATS link found on website or careers page
+  Kepler Communications                    Lever            kepler 
+  FreshBooks                               Rippling          Uses Rippling, which has no public feed reader yet
+  ecobee                                   -                 No ATS link found on website or careers page
+  Introhive                                BambooHR         introhive 
+  KOHO                                     Ashby            koho 
+  League                                   -                 Website did not load
+  Interac                                  Workday           Uses Workday, which has no public feed reader yet
+  Later                                    Greenhouse       later 
+  Loopio                                   Ashby            loopio 
+  Magnet Forensics                         Lever            magnetforensics 
+  LeddarTech                               -                 No ATS link found on website or careers page
+  Miovision                                Ashby            miovision 
+  MDA Space                                UKG               Uses UKG, which has no public feed reader yet
+  Maple                                    Lever            getmaple 
+  Igloo Software                           -                 No ATS link found on website or careers page
+  Mitel                                    Workday           Uses Workday, which has no public feed reader yet
+  Kinaxis                                  -                 No ATS link found on website or careers page
+  Neo Financial                            Ashby            neofinancial 
+  Mappedin                                 -                 Website did not load
+  Nulogy                                   JazzHR            Uses JazzHR, which has no public feed reader yet
+  Paystone                                 JazzHR            Uses JazzHR, which has no public feed reader yet
+  Mojio                                    -                 No ATS link found on website or careers page
+  Plusgrade                                Workday           Uses Workday, which has no public feed reader yet
+  Nuvei                                    Workable         nuvei 
+  Questrade                                Greenhouse       questrade 
+  Pythian                                  Rippling          Uses Rippling, which has no public feed reader yet
+  Relic Entertainment                      BambooHR         relicentertainment 
+  Moment Factory                           -                 No ATS link found on website or careers page
+  OpenText                                 -                 No ATS link found on website or careers page
+  PointClickCare                           Lever            pointclickcare 
+  Shakepay                                 Greenhouse       shakepay Website did not load
+  Lightspeed Commerce                      Ashby            lightspeedhq 
+  Showpass                                 BambooHR         showpass 
+  Proposify                                -                 No ATS link found on website or careers page
+  Solink                                   Ashby            solink 
+  Spare                                    Ashby            spare 
+  SkipTheDishes                            Workday           Uses Workday, which has no public feed reader yet
+  Redbrick                                 -                 No ATS link found on website or careers page
+  Top Hat                                  Ashby            top-hat 
+  Shopify                                  -                 No ATS link found on website or careers page
+  Symend                                   -                 No ATS link found on website or careers page
+  Ross Video                               -                 No ATS link found on website or careers page
+  Uberflip                                 Lever            uberflip 
+  Rose Rocket                              -                 No ATS link found on website or careers page
+  Unbounce                                 -                 Website did not load
+  Vendasta                                 BambooHR         vendasta 
+  TouchBistro                              -                 No ATS link found on website or careers page
+  Vena Solutions                           Pinpoint          Uses Pinpoint, which has no public feed reader yet
+  Sanctuary AI                             -                 No ATS link found on website or careers page
+  Waabi                                    Lever            waabi 
+  Tealbook                                 -                 Website did not load
+  Wealthsimple                             Ashby            wealthsimple 
+  Wattpad                                  Lever            wattpad 
+  Verafin                                  Workday           Uses Workday, which has no public feed reader yet
+  Wave Financial                           Lever            waveapps 
+  Workleap                                 Greenhouse       workleap 
+  Vidyard                                  -                 No ATS link found on website or careers page
+  Xanadu                                   -                 No ATS link found on website or careers page
+  Untether AI                              -                 Website did not load
+  Busbud                                   -                 Website did not load
+
+ATS across all companies:
+  (none)             114
+  BambooHR           41
+  Ashby              27
+  Greenhouse         25
+  Lever              19
+  Workable           11
+  Workday            7
+  JazzHR             7
+  Dayforce           6
+  ADP                5
+  Rippling           5
+  Breezy             4
+  UKG                3
+  SuccessFactors     2
+  Collage            2
+  iCIMS              2
+  Pinpoint           2
+  Jobvite            1
+  Recruitee          1
+  SmartRecruiters    1
+  Gem                1
+
+Status across all companies:
+  Manual check       162
+  Feed found         124
+
+13 feeds were found by guessing from the company name; please confirm them in the report.
+
+Report: logs\detection_report_canadian_tech.csv

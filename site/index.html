@@ -87,6 +87,22 @@ select.tap-input { appearance: none; -webkit-appearance: none; padding-right: 44
 /* Disclaimer */
 .notice { margin-top: var(--space-32); padding: var(--space-16) var(--space-24); background: var(--color-brand-tint); border-radius: var(--radius-md); color: var(--color-text); font-size: var(--text-sm); max-width: 78ch; }
 
+/* Stream tabs */
+.streams { margin-top: var(--space-32); display: flex; flex-wrap: wrap; gap: var(--space-8) var(--space-32); border-bottom: 1px solid var(--color-border); }
+.stream-tab { position: relative; display: inline-flex; align-items: baseline; gap: var(--space-8); min-height: 48px; padding: var(--space-8) 0 var(--space-16); border: 0; background: none; font-family: var(--font-body); font-size: var(--text-base); font-weight: 700; color: var(--color-text-muted); cursor: pointer; }
+.stream-tab:hover { color: var(--color-brand-primary); }
+.stream-tab[aria-selected="true"] { color: var(--color-brand-primary); }
+.stream-tab[aria-selected="true"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 4px; border-radius: var(--radius-pill); background: var(--color-brand-primary); }
+.stream-tab__count { font-weight: 400; font-variant-numeric: tabular-nums; }
+.stream-note { margin-top: var(--space-16); font-size: var(--text-sm); color: var(--color-text-muted); max-width: 70ch; }
+.label-short { display: none; }
+@media (max-width: 480px) {
+  .streams { flex-wrap: nowrap; gap: var(--space-24); }
+  .stream-tab { font-size: var(--text-sm); }
+  .label-long { display: none; }
+  .label-short { display: inline; }
+}
+
 /* Controls */
 .controls { margin-top: var(--space-32); display: grid; gap: var(--space-24); }
 .pills { display: flex; flex-wrap: wrap; gap: var(--space-8); margin: 0; padding: 0; border: 0; }
@@ -141,7 +157,7 @@ main { padding-bottom: var(--space-80); }
   <div class="hero tap-wrap">
     <p class="tap-label tap-label--accent">TAP Job Roundup</p>
     <h1 class="tap-display hero__title" id="headline">People and Culture roles at Canadian tech companies</h1>
-    <p class="hero__lead">Every Monday, Tech and People Network gathers the open People and Culture roles posted by TAP member companies, so you can see who is hiring in one place.</p>
+    <p class="hero__lead" id="lead">Every Monday, Tech and People Network gathers the open People and Culture roles posted by TAP member companies, so you can see who is hiring in one place.</p>
     <p class="hero__updated" id="updated" hidden></p>
   </div>
 </header>
@@ -149,6 +165,19 @@ main { padding-bottom: var(--space-80); }
 <main class="tap-wrap">
   <p class="notice" role="note">Roles are pulled each week from company careers pages and link to the original posting. TAP doesn't verify them, so please confirm a role is still open before you apply.</p>
 
+  <div id="stream-wrap" hidden>
+    <div class="streams" role="tablist" aria-label="Which companies">
+      <button class="stream-tab" role="tab" id="tab-member" data-stream="member" aria-selected="true" aria-controls="results">
+        <span class="label-long">TAP member companies</span><span class="label-short">TAP members</span><span class="stream-tab__count" data-count="member"></span>
+      </button>
+      <button class="stream-tab" role="tab" id="tab-canadian_tech" data-stream="canadian_tech" aria-selected="false" aria-controls="results" tabindex="-1">
+        <span>More Canadian tech</span><span class="stream-tab__count" data-count="canadian_tech"></span>
+      </button>
+    </div>
+    <p class="stream-note" id="stream-note"></p>
+  </div>
+
+  <div id="results" role="tabpanel" aria-labelledby="tab-member">
   <div class="controls">
     <fieldset class="pills" id="categories">
       <legend>Level</legend>
@@ -174,6 +203,7 @@ main { padding-bottom: var(--space-80); }
     <h2>No roles match these filters</h2>
     <p>Try a different search, or <button class="linkbtn" type="button" data-clear>clear all filters</button>.</p>
   </div>
+  </div>
 </main>
 
 <footer class="tap-footer">
@@ -193,11 +223,19 @@ main { padding-bottom: var(--space-80); }
   const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
+  const STREAMS = {
+    member: { label: "TAP member companies", note: "Open roles at TAP Network member companies." },
+    canadian_tech: { label: "More Canadian tech", note: "Open roles at other tech companies headquartered in Canada with about 50 or more employees. They aren't TAP members." },
+  };
   const $ = (id) => document.getElementById(id);
   const els = { cats: $("categories"), search: $("search"), province: $("province"), jobs: $("jobs"),
-                count: $("count"), empty: $("empty"), clear: $("clear"), headline: $("headline"), updated: $("updated") };
-  const state = { category: "", q: "", province: "" };
+                count: $("count"), empty: $("empty"), clear: $("clear"), headline: $("headline"), updated: $("updated"),
+                streamWrap: $("stream-wrap"), streamNote: $("stream-note"), panel: $("results"),
+                tabs: [...document.querySelectorAll(".stream-tab")] };
+  const state = { stream: "member", category: "", q: "", province: "" };
   let jobs = [];
+  let allJobs = [];
+  const streamOf = (j) => (j.stream === "canadian_tech" ? "canadian_tech" : "member");
 
   const fold = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const parseDate = (iso) => { const [y, m, d] = (iso || "").split("-").map(Number); return y ? new Date(y, m - 1, d) : null; };
@@ -275,15 +313,44 @@ main { padding-bottom: var(--space-80); }
     writeUrl();
   }
 
+  // Stream tabs: each stream is its own list, with its own counts and provinces
+  function selectStream(stream, focus) {
+    state.stream = stream;
+    jobs = allJobs.filter((j) => streamOf(j) === stream);
+    els.tabs.forEach((t) => {
+      const on = t.dataset.stream === stream;
+      t.setAttribute("aria-selected", String(on));
+      t.tabIndex = on ? 0 : -1;
+      if (on && focus) t.focus();
+    });
+    els.panel.setAttribute("aria-labelledby", "tab-" + stream);
+    els.streamNote.textContent = STREAMS[stream].note;
+    fillProvinces();
+    if (state.province && !jobs.some((j) => (j.provinces || []).includes(state.province))) {
+      state.province = ""; els.province.value = "";
+    }
+    render();
+  }
+  els.tabs.forEach((t, i) => {
+    t.addEventListener("click", () => selectStream(t.dataset.stream));
+    t.addEventListener("keydown", (e) => {
+      if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+      const next = els.tabs[(i + (e.key === "ArrowRight" ? 1 : els.tabs.length - 1)) % els.tabs.length];
+      selectStream(next.dataset.stream, true);
+    });
+  });
+
   // Filters live in the address, so a filtered view can be shared in Slack
   function readUrl() {
     const p = new URLSearchParams(location.search);
+    state.stream = p.get("stream") === "canadian-tech" ? "canadian_tech" : "member";
     state.category = CATEGORIES.includes(p.get("level")) ? p.get("level") : "";
     state.q = p.get("q") || "";
     state.province = p.get("province") || "";
   }
   function writeUrl() {
     const p = new URLSearchParams();
+    if (state.stream === "canadian_tech" && !els.streamWrap.hidden) p.set("stream", "canadian-tech");
     if (state.category) p.set("level", state.category);
     if (state.q) p.set("q", state.q);
     if (state.province) p.set("province", state.province);
@@ -292,6 +359,7 @@ main { padding-bottom: var(--space-80); }
   }
 
   function fillProvinces() {
+    els.province.querySelectorAll("option:not([value=''])").forEach((o) => o.remove());
     const present = new Set(jobs.flatMap((j) => j.provinces || []));
     present.add("REMOTE");
     if (state.province) present.add(state.province);
@@ -328,17 +396,23 @@ main { padding-bottom: var(--space-80); }
   fetch("jobs.json", { cache: "no-store" })
     .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then((data) => {
-      jobs = (data.jobs || []).slice().sort((a, b) =>
+      allJobs = (data.jobs || []).slice().sort((a, b) =>
         (b.first_found || "").localeCompare(a.first_found || "") || (b.date_posted || "").localeCompare(a.date_posted || ""));
-      const n = jobs.length, fresh = jobs.filter((j) => j.is_new).length;
+      const n = allJobs.length, fresh = allJobs.filter((j) => j.is_new).length;
+      const perStream = { member: 0, canadian_tech: 0 };
+      allJobs.forEach((j) => perStream[streamOf(j)]++);
       els.headline.textContent = `${n} People and Culture ${n === 1 ? "role" : "roles"} open at Canadian tech companies`;
       document.title = `${n} People and Culture roles · TAP Job Roundup`;
       if (data.run_date) {
         els.updated.textContent = `Last updated ${longDate(data.run_date, true)}` + (fresh ? ` · ${fresh} new this week` : "");
         els.updated.hidden = false;
       }
-      fillProvinces();
-      render();
+      // The tabs appear only once the second stream has roles; until then the page lists member roles only
+      els.streamWrap.hidden = perStream.canadian_tech === 0;
+      document.querySelectorAll("[data-count]").forEach((c) => { c.textContent = String(perStream[c.dataset.count]); });
+      if (els.streamWrap.hidden) state.stream = "member";
+      else $("lead").textContent = "Every Monday, Tech and People Network gathers the open People and Culture roles at TAP member companies and other Canadian tech companies, so you can see who is hiring in one place.";
+      selectStream(state.stream);
     })
     .catch(() => {
       els.count.textContent = "This week's roles didn't load. Please refresh the page, or check back shortly.";

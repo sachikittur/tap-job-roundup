@@ -38,6 +38,9 @@ jobs:
       RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       SLACK_ALERT_WEBHOOK_URL: ${{ secrets.SLACK_ALERT_WEBHOOK_URL }}
+      # Optional: the Companies tab published as CSV (File > Share > Publish to web).
+      # When set, each run uses the Sheet as it is that morning instead of data/companies.csv.
+      COMPANIES_CSV_URL: ${{ secrets.COMPANIES_CSV_URL }}
     steps:
       - name: Check it's 9 am in Toronto
         id: clock
@@ -62,6 +65,17 @@ jobs:
         if: steps.clock.outputs.go == 'true'
         run: pip install -r requirements.txt
 
+      - name: Get the latest company list from the Sheet
+        if: steps.clock.outputs.go == 'true' && env.COMPANIES_CSV_URL != ''
+        run: |
+          curl -fsSL "$COMPANIES_CSV_URL" -o /tmp/companies.csv
+          # Use it only if it looks like the Companies tab; otherwise keep the repo copy
+          if python scripts/check_companies_csv.py /tmp/companies.csv; then
+            cp /tmp/companies.csv data/companies.csv
+          else
+            echo "::warning::The published Sheet didn't look like the Companies tab, so the repo copy was used."
+          fi
+
       - name: Fetch, filter and classify
         id: weekly
         if: steps.clock.outputs.go == 'true'
@@ -72,7 +86,7 @@ jobs:
         run: |
           git config user.name "TAP Job Roundup bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/jobs.json logs/
+          git add site/jobs.json logs/ data/companies.csv
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

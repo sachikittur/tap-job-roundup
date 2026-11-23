@@ -12,6 +12,7 @@ Usage:
     python scripts/detect_ats.py --all        # re-detect every company
     python scripts/detect_ats.py --limit 10   # first 10 only (for testing)
     python scripts/detect_ats.py --dry-run    # report only, leave the CSV alone
+    python scripts/detect_ats.py --status "To research"   # only newly added companies
 """
 from __future__ import annotations
 
@@ -203,6 +204,7 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--workers", type=int, default=8)
+    ap.add_argument("--status", help='only rows with this Status, e.g. "To research"')
     ap.add_argument("--csv", type=Path, default=CSV_PATH, help="input CSV (default data/companies.csv)")
     ap.add_argument("--report", type=Path, default=REPORT_PATH)
     args = ap.parse_args()
@@ -211,7 +213,8 @@ def main() -> None:
     rows, fields, c = load_csv()
     todo = [r for r in rows
             if (args.all or not (r[c["ats"]] or "").strip())
-            and (r[c["status"]] or "").strip().lower() != "excluded"]
+            and (r[c["status"]] or "").strip().lower() != "excluded"
+            and (not args.status or (r[c["status"]] or "").strip().lower() == args.status.lower())]
     if args.limit:
         todo = todo[: args.limit]
     print(f"{len(rows)} companies in CSV, {len(todo)} to detect")

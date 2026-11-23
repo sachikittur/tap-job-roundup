@@ -53,6 +53,33 @@ python -m http.server 8000 -d site
 
 Then open http://localhost:8000.
 
+## Two streams
+
+Every company belongs to one stream, set in the company list's **Stream** column:
+
+| Stream value | Where its roles appear |
+|---|---|
+| `TAP member` (or blank) | The **TAP member companies** tab, and the lead of the Slack post |
+| `Canadian tech` | The **More Canadian tech** tab, and its own line in the Slack post |
+
+A Canadian tech company counts only once someone confirms it meets the rules (headquartered in Canada, tech as the core business, about 50 or more employees) and sets **Eligibility** to `Eligible`. New candidates start as `To confirm`, and the **HQ** column notes where they are based. If a company is listed in both streams, its roles go in the member stream. The page shows the tabs only once the Canadian tech stream has roles.
+
+Preview what the Canadian tech tab would show before anyone confirms (writes `logs/test_*` only):
+
+```powershell
+python scripts/run_weekly.py --include-unconfirmed
+```
+
+Find feeds for newly added companies only:
+
+```powershell
+python scripts/detect_ats.py --status "To research"
+```
+
+### Keeping the list in the Sheet
+
+The Company List Sheet is the source of truth. To have each Monday run use the Sheet as it is that morning, with no exports: in the Sheet choose File > Share > Publish to web, pick the **Companies** tab and **Comma separated values**, copy the link, and add it as a repository secret named `COMPANIES_CSV_URL`. The run checks the download looks like the Companies tab before using it, and keeps `data/companies.csv` in step. Without the secret, the run uses `data/companies.csv` as committed.
+
 ## Tuning
 
 - A role is missing or shouldn't be there: edit the lists in `config/filters.yaml`.

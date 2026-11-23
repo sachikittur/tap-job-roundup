@@ -53,15 +53,36 @@ def col(row: dict, *names: str) -> str:
     return ""
 
 
-def load_companies(only: set[str] | None):
+MEMBER, CANADIAN_TECH = "member", "canadian_tech"
+
+
+def stream_of(row: dict) -> str:
+    """Stream column: blank or "TAP member" -> member; anything else -> Canadian tech."""
+    value = col(row, "Stream").lower()
+    return MEMBER if not value or value.startswith("tap") or "member" in value else CANADIAN_TECH
+
+
+def company_key(name: str) -> str:
+    name = re.sub(r"[,.]?\s+(inc|ltd|limited|corp|corporation|co|llc|ulc)\.?$", "", name.strip(), flags=re.I)
+    return re.sub(r"[^a-z0-9]", "", name.lower())
+
+
+def load_companies(only: set[str] | None, include_unconfirmed: bool = False):
     with COMPANIES.open(encoding="utf-8-sig", newline="") as fh:
         rows = list(csv.DictReader(fh))
+    member_keys = {company_key(col(r, "Company")) for r in rows if stream_of(r) == MEMBER}
     targets, skipped = [], Counter()
     for r in rows:
         name = col(r, "Company")
+        stream = stream_of(r)
         if only and name.lower() not in only:
             continue
-        if col(r, "Eligibility").lower() != "eligible":
+        if stream == CANADIAN_TECH and company_key(name) in member_keys:
+            skipped["listed as a member too"] += 1  # a member's roles always go in the member stream
+            continue
+        eligibility = col(r, "Eligibility").lower()
+        unconfirmed_ok = include_unconfirmed and stream == CANADIAN_TECH and eligibility == "to confirm"
+        if eligibility != "eligible" and not unconfirmed_ok:
             skipped["not Eligible"] += 1
             continue
         ats_name = ats.normalise_ats(col(r, "ATS"))
@@ -72,19 +93,19 @@ def load_companies(only: set[str] | None):
         if not token:
             skipped["no board token"] += 1
             continue
-        targets.append((name, ats_name, token))
+        targets.append((name, ats_name, token, stream))
     return targets, skipped, len(rows)
 
 
 def fetch_company(target):
-    name, ats_name, token = target
+    name, ats_name, token, stream = target
     started = time.monotonic()
     try:
         postings = READERS[ats_name](token, name, filters.title_ok)
-        return {"company": name, "ats": ats_name, "token": token, "ok": True,
+        return {"company": name, "ats": ats_name, "token": token, "stream": stream, "ok": True,
                 "postings": postings, "seconds": round(time.monotonic() - started, 1)}
     except Exception as e:  # log and move on
-        return {"company": name, "ats": ats_name, "token": token, "ok": False, "postings": [],
+        return {"company": name, "ats": ats_name, "token": token, "stream": stream, "ok": False, "postings": [],
                 "error": f"{type(e).__name__}: {e}"[:300], "seconds": round(time.monotonic() - started, 1),
                 "trace": traceback.format_exc(limit=2)}
 
@@ -106,12 +127,15 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="comma-separated company names, for testing")
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--include-unconfirmed", action="store_true",
+                    help='preview: also fetch Canadian tech companies marked "To confirm" (writes logs/test_* only)')
     args = ap.parse_args()
     only = {s.strip().lower() for s in args.only.split(",")} if args.only else None
+    test_run = bool(only) or args.include_unconfirmed
 
     now = datetime.now(EASTERN)
     today = now.strftime("%Y-%m-%d")
-    targets, skipped, total_rows = load_companies(only)
+    targets, skipped, total_rows = load_companies(only, args.include_unconfirmed)
     print(f"{total_rows} companies in CSV; fetching {len(targets)} "
           f"({', '.join(f'{v} {k}' for k, v in skipped.items()) or 'none skipped'})")
 
@@ -131,7 +155,7 @@ def main() -> int:
             if keep and classify:
                 category, rule = classify.classify(p)
             review_rows.append({
-                "Company": p.company, "Title": p.title,
+                "Stream": res["stream"], "Company": p.company, "Title": p.title,
                 "Locations (raw)": " | ".join(l.raw or l.country for l in p.locations),
                 "People and Culture": "yes" if pc_ok else "no", "P&C reason": pc_why,
                 "In Canada": ("yes" if locs else "no") if pc_ok else "", "Location reason": loc_why,
@@ -146,6 +170,7 @@ def main() -> int:
                 "id": job_id(p.url),
                 "title": p.title,
                 "company": p.company,
+                "stream": res["stream"],
                 "location": " · ".join(locs),
                 "locations": locs,
                 "provinces": provs,
@@ -170,14 +195,20 @@ def main() -> int:
         "count": len(jobs),
         "new_count": sum(j["is_new"] for j in jobs),
         "categories": dict(Counter(j["category"] for j in jobs if j["category"])),
+        "streams": {
+            st: {"count": sum(j["stream"] == st for j in jobs),
+                 "new_count": sum(j["stream"] == st and j["is_new"] for j in jobs),
+                 "categories": dict(Counter(j["category"] for j in jobs if j["stream"] == st and j["category"]))}
+            for st in (MEMBER, CANADIAN_TECH)
+        },
         "jobs": jobs,
     }
     # A partial test run (--only) must never replace the live page data or logs
-    prefix = "test_" if only else ""
-    target = LOGS / "test_jobs.json" if only else JOBS_JSON
+    prefix = "test_" if test_run else ""
+    target = LOGS / "test_jobs.json" if test_run else JOBS_JSON
     target.parent.mkdir(exist_ok=True)
     target.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-    if only:
+    if test_run:
         print(f"Test run: wrote logs/test_*; site/jobs.json and the weekly logs left unchanged")
 
     LOGS.mkdir(exist_ok=True)
@@ -186,11 +217,11 @@ def main() -> int:
         w.writeheader()
         w.writerows(review_rows)
     with (LOGS / f"{prefix}classification.csv").open("w", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=["Category", "Rule", "Title", "Company", "Location",
+        w = csv.DictWriter(fh, fieldnames=["Stream", "Category", "Rule", "Title", "Company", "Location",
                                            "Employment type", "URL"])
         w.writeheader()
         for j in jobs:
-            w.writerow({"Category": j["category"], "Rule": j["category_rule"], "Title": j["title"],
+            w.writerow({"Stream": j["stream"], "Category": j["category"], "Rule": j["category_rule"], "Title": j["title"],
                         "Company": j["company"], "Location": j["location"],
                         "Employment type": j["employment_type"], "URL": j["url"]})
     summary = {
@@ -206,8 +237,9 @@ def main() -> int:
         "new_jobs": out["new_count"],
         "dropped_since_last_run": len(dropped),
         "categories": out["categories"],
-        "failures": [{k: r[k] for k in ("company", "ats", "token", "error")} for r in failed],
-        "companies": [{"company": r["company"], "ats": r["ats"], "ok": r["ok"],
+        "streams": out["streams"],
+        "failures": [{k: r[k] for k in ("company", "ats", "token", "stream", "error")} for r in failed],
+        "companies": [{"company": r["company"], "stream": r["stream"], "ats": r["ats"], "ok": r["ok"],
                        "postings": len(r["postings"]), "seconds": r["seconds"]} for r in results],
     }
     (LOGS / f"{prefix}run_log.json").write_text(json.dumps(summary, ensure_ascii=False, indent=1), encoding="utf-8")
